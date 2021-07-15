@@ -7,12 +7,11 @@ use PhpFromZero\Entity\BaseEntity;
 /**
  * Message Entity
  * 
- * @author Justin Dah-kenangnon <dah.kenangnon@epatriote.com>
+ * @author Justin Dah-kenangnon <dah.kenangnon@gmail.com>
  * 
  * @link https://github.com/Dahkenangnon
  * @link https://ePatriote.com
  * @link https://Creative.ePatriote.com
- * @link https://Dah-kenangnon.com
  */
 class Message extends BaseEntity
 {
@@ -50,7 +49,7 @@ class Message extends BaseEntity
      *
      * @param  String  $title  The message title
      *
-     * @return  self
+     * 
      */ 
     public function setTitle(?String $title)
     {
@@ -74,7 +73,7 @@ class Message extends BaseEntity
      *
      * @param  String  $content  The message content
      *
-     * @return  self
+     * 
      */ 
     public function setContent(?String $content)
     {
@@ -99,7 +98,6 @@ class Message extends BaseEntity
      *
      * @param  int  $authorid  The User it who post the message
      *
-     * @return  self
      */ 
     public function setAuthorid(int $authorid)
     {

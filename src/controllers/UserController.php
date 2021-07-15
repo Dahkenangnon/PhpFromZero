@@ -10,12 +10,11 @@ use PhpFromZero\Http\Response;
 /**
  * User Controller
  * 
- * @author Justin Dah-kenangnon <dah.kenangnon@epatriote.com>
+ * @author Justin Dah-kenangnon <dah.kenangnon@gmail.com>
  * 
  * @link https://github.com/Dahkenangnon
  * @link https://ePatriote.com
  * @link https://Creative.ePatriote.com
- * @link https://Dah-kenangnon.com
  */
 class UserController extends BaseController
 {
@@ -32,6 +31,8 @@ class UserController extends BaseController
 
     /**
      * List of user
+     * 
+     * @return Response
      */
     public function index(): Response
     {
@@ -42,6 +43,12 @@ class UserController extends BaseController
 
     /**
      * A single user page
+     * 
+     * @param Request $request
+     * 
+     * @param int $id
+     * 
+     * @return Response
      */
     public function show(Request $request, int $id): Response
     {
@@ -60,7 +67,11 @@ class UserController extends BaseController
 
 
     /**
-     * View my profile page
+     * View my dashboard
+     * 
+     * @param Request $request
+     * 
+     * @return Response
      */
     public function me(Request $request): Response
     {
@@ -71,7 +82,13 @@ class UserController extends BaseController
 
 
     /**
-     * Delete a user only the admin
+     * Delete a user 
+     * 
+     * @param int $id 
+     * 
+     * @param Request $request
+     * 
+     * @return Response
      */
     public function delete(Request $request, int $id)
     {

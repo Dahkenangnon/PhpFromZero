@@ -1,7 +1,4 @@
 <?php
-//Multiline error log class
-// ersin güvenç 2008 eguvenc@gmail.com
-//For break use "\n" instead '\n'
 
 namespace PhpFromZero\Utils;
 

@@ -15,12 +15,11 @@ use PhpFromZero\Utils\Utils;
 /**
  * Handle all thing about user's auth(entication|orization)
  * 
- * @author Justin Dah-kenangnon <dah.kenangnon@epatriote.com>
+ * @author Justin Dah-kenangnon <dah.kenangnon@gmail.com>
  * 
  * @link https://github.com/Dahkenangnon
  * @link https://ePatriote.com
  * @link https://Creative.ePatriote.com
- * @link https://Dah-kenangnon.com
  */
 class AuthController extends SecurityController
 {
@@ -75,13 +74,7 @@ class AuthController extends SecurityController
                 // Set user in the sesstion
 
                 $request->saveUser($user);
-
-
-                // echo "<pre>";
-                // print_r($request->getUser());
-                // echo "</pre>";
-                // die();
-
+                
                 return $this->redirect($request, "/user/me");
             }
 

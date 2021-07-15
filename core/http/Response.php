@@ -6,12 +6,11 @@ namespace PhpFromZero\Http;
  * 
  * The HTTP response to send to the browser
  * 
- * @author Justin Dah-kenangnon <dah.kenangnon@epatriote.com>
+ * @author Justin Dah-kenangnon <dah.kenangnon@gmail.com>
  * 
  * @link https://github.com/Dahkenangnon
  * @link https://ePatriote.com
  * @link https://Creative.ePatriote.com
- * @link https://Dah-kenangnon.com
  */
 class Response
 {
@@ -116,7 +115,7 @@ class Response
     /**
      * Set the value of content
      *
-     * @return  self
+     * 
      */
     public function setContent($content)
     {
@@ -141,7 +140,7 @@ class Response
      *
      * @param int The HTTP response status code
      * 
-     * @return  self
+     * 
      */
     public function setStatus($status)
     {
@@ -167,7 +166,7 @@ class Response
      * @param int The HTTP response status text
      * 
      * 
-     * @return  self
+     * 
      */
     public function setStatusText($statusText)
     {
@@ -191,7 +190,7 @@ class Response
      *
      * @param array $headers The HTTP response header
      * 
-     * @return  self
+     * 
      */
     public function setHeaders($headers)
     {

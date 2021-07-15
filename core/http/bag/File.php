@@ -8,12 +8,11 @@ namespace PhpFromZero\Http\Bag;
  * 
  * Represent a file
  * 
- * @author Justin Dah-kenangnon <dah.kenangnon@epatriote.com>
+ * @author Justin Dah-kenangnon <dah.kenangnon@gmail.com>
  * 
  * @link https://github.com/Dahkenangnon
  * @link https://ePatriote.com
  * @link https://Creative.ePatriote.com
- * @link https://Dah-kenangnon.com
  */
 class File
 {
@@ -68,7 +67,7 @@ class File
     /**
      * Set file name
      *
-     * @return  self
+     * 
      */
     public function setName($name)
     {
@@ -88,7 +87,7 @@ class File
     /**
      * Set file type
      *
-     * @return  self
+     * 
      */
     public function setType($type)
     {
@@ -108,7 +107,7 @@ class File
     /**
      * Set file temp_dir
      *
-     * @return  self
+     * 
      */
     public function setTempDir($temp_dir)
     {
@@ -128,7 +127,7 @@ class File
     /**
      * Set the value of error
      *
-     * @return  self
+     * 
      */
     public function setError($error)
     {
@@ -148,7 +147,7 @@ class File
     /**
      * Set file size
      *
-     * @return  self
+     * 
      */
     public function setSize($size)
     {

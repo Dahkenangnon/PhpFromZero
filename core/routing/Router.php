@@ -2,6 +2,7 @@
 
 namespace PhpFromZero\Routing;
 
+use PhpFromZero\Error\RouteNotFoundError;
 use PhpFromZero\Http\Request;
 use PhpFromZero\Routing\Route;
 
@@ -9,18 +10,16 @@ use PhpFromZero\Routing\Route;
  * 
  * The route manager
  * 
- * @author Justin Dah-kenangnon <dah.kenangnon@epatriote.com>
+ * @author Justin Dah-kenangnon <dah.kenangnon@gmail.com>
  * 
  * @link https://github.com/Dahkenangnon
  * @link https://ePatriote.com
  * @link https://Creative.ePatriote.com
- * @link https://Dah-kenangnon.com
  */
 class Router
 {
   protected $routes = [];
 
-  const NO_ROUTE = 1;
 
   /**
    *  @var Request 
@@ -36,16 +35,16 @@ class Router
     $xml->load(dirname($dir, 3) . "/src/routes/Routes.xml");
     $routesXmls = $xml->getElementsByTagName('route');
 
-    // On parcourt les routes du fichier XML.
+    // Loop through the project routes defined in the XML files
     foreach ($routesXmls as $route) {
       $vars = [];
 
-      // On regarde si des variables sont présentes dans l'URL.
+      // Has this url some vars ?
       if ($route->hasAttribute('vars')) {
         $vars = explode(',', $route->getAttribute('vars'));
       }
 
-      // On ajoute la route au routeur.
+      // Push the route in $this->routes
       $this->addRoute(new Route(
         $route->getAttribute('url'),
         $route->getAttribute('controller'),
@@ -91,7 +90,7 @@ class Router
       }
     }
 
-    throw new \RuntimeException('Aucune route ne correspond à l\'URL', self::NO_ROUTE);
+    throw  throw new RouteNotFoundError("This url don't match any route");
   }
 
 

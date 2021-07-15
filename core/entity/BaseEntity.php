@@ -8,12 +8,11 @@ use ArrayAccess;
  * 
  * Implement ArrayAccess to allow all our entity to be use as array
  * 
- * @author Justin Dah-kenangnon <dah.kenangnon@epatriote.com>
+ * @author Justin Dah-kenangnon <dah.kenangnon@gmail.com>
  * 
  * @link https://github.com/Dahkenangnon
  * @link https://ePatriote.com
  * @link https://Creative.ePatriote.com
- * @link https://Dah-kenangnon.com
  */
 class BaseEntity  implements ArrayAccess
 {
@@ -31,7 +30,7 @@ class BaseEntity  implements ArrayAccess
     /**
      * Set the value of id
      *
-     * @return  self
+     * 
      */
     public function setId($id)
     {

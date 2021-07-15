@@ -12,12 +12,11 @@ use PhpFromZero\Http\Bag\Get;
  * 
  * The HTTP request
  * 
- * @author Justin Dah-kenangnon <dah.kenangnon@epatriote.com>
+ * @author Justin Dah-kenangnon <dah.kenangnon@gmail.com>
  * 
  * @link https://github.com/Dahkenangnon
  * @link https://ePatriote.com
  * @link https://Creative.ePatriote.com
- * @link https://Dah-kenangnon.com
  */
 class Request
 {
@@ -100,7 +99,7 @@ class Request
      *
      * @param  Post  $post
      *
-     * @return  self
+     * 
      */
     public function setPost(Post $post)
     {
@@ -124,7 +123,7 @@ class Request
      *
      * @param  Get  $get
      *
-     * @return  self
+     * 
      */
     public function setGet(Get $get)
     {
@@ -148,7 +147,7 @@ class Request
      *
      * @param  Files  $files
      *
-     * @return  self
+     * 
      */
     public function setFiles(Files $files)
     {
@@ -173,7 +172,7 @@ class Request
      *
      * @param  String  $method  Method used to perform the request $_SERVER['REQUEST_METHOD']
      *
-     * @return  self
+     * 
      */
     public function setMethod(String $method)
     {
@@ -197,7 +196,7 @@ class Request
      *
      * @param  String  $url  The request Url $_SERVER['REQUEST_URI'];
      *
-     * @return  self
+     * 
      */
     public function setUrl(String $url)
     {
@@ -221,7 +220,7 @@ class Request
      * Set the session
      *
      *
-     * @return  self
+     * 
      */
     public function setSession()
     {
@@ -236,7 +235,7 @@ class Request
      *
      * @param User $user The user to save
      *
-     * @return  self
+     * 
      */
     public function saveUser($user){
         $this->session->user = $user;
@@ -248,7 +247,7 @@ class Request
      * Clear the connected user from the session
      *
      *
-     * @return  self
+     * 
      */
     public function deleteUser(){
         $this->session->user = null;

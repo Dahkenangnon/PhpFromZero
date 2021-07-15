@@ -7,12 +7,11 @@ use PhpFromZero\Entity\BaseEntity;
 /**
  * User entity
  * 
- * @author Justin Dah-kenangnon <dah.kenangnon@epatriote.com>
+ * @author Justin Dah-kenangnon <dah.kenangnon@gmail.com>
  * 
  * @link https://github.com/Dahkenangnon
  * @link https://ePatriote.com
  * @link https://Creative.ePatriote.com
- * @link https://Dah-kenangnon.com
  */
 class User extends BaseEntity
 {
@@ -65,7 +64,7 @@ class User extends BaseEntity
      *
      * @param  String  $name  User's pseudo
      *
-     * @return  self
+     * 
      */
     public function setName(?String $name)
     {
@@ -89,7 +88,7 @@ class User extends BaseEntity
      *
      * @param  int  $age  User age
      *
-     * @return  self
+     * 
      */
     public function setAge(?int $age)
     {
@@ -113,7 +112,7 @@ class User extends BaseEntity
      *
      * @param  String  $photo  User profile's photo path
      *
-     * @return  self
+     * 
      */
     public function setPhoto(?String $photo)
     {
@@ -137,7 +136,7 @@ class User extends BaseEntity
      *
      * @param  String  $email  User's email
      *
-     * @return  self
+     * 
      */
     public function setEmail(?String $email)
     {
@@ -161,7 +160,7 @@ class User extends BaseEntity
      *
      * @param  String  $password  User's password
      *
-     * @return  self
+     * 
      */
     public function setPassword(?String $password)
     {
@@ -181,7 +180,7 @@ class User extends BaseEntity
     /**
      * Set role
      *
-     * @return  self
+     * 
      */
     public function setRole($role)
     {

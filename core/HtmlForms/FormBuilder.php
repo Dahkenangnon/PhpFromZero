@@ -9,12 +9,11 @@ use PhpFromZero\Http\Request;
 /**
  * HTML form base class
  * 
- * @author Justin Dah-kenangnon <dah.kenangnon@epatriote.com>
+ * @author Justin Dah-kenangnon <dah.kenangnon@gmail.com>
  * 
  * @link https://github.com/Dahkenangnon
  * @link https://ePatriote.com
  * @link https://Creative.ePatriote.com
- * @link https://Dah-kenangnon.com
  */
 abstract class FormBuilder
 {
@@ -253,7 +252,7 @@ abstract class FormBuilder
      *
      * @param  String  $id  The Form id
      *
-     * @return  self
+     * 
      */
     public function setId(String $id)
     {

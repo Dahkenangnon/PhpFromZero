@@ -10,12 +10,11 @@ use PhpFromZero\HtmlForms\FormBuilder;
 /**
  * Message form
  * 
- * @author Justin Dah-kenangnon <dah.kenangnon@epatriote.com>
+ * @author Justin Dah-kenangnon <dah.kenangnon@gmail.com>
  * 
  * @link https://github.com/Dahkenangnon
  * @link https://ePatriote.com
  * @link https://Creative.ePatriote.com
- * @link https://Dah-kenangnon.com
  */
 class MessageForm extends FormBuilder
 {

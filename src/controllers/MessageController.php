@@ -12,12 +12,11 @@ use PhpFromZero\Http\Response;
 /**
  * Message Controller
  * 
- * @author Justin Dah-kenangnon <dah.kenangnon@epatriote.com>
+ * @author Justin Dah-kenangnon <dah.kenangnon@gmail.com>
  * 
  * @link https://github.com/Dahkenangnon
  * @link https://ePatriote.com
  * @link https://Creative.ePatriote.com
- * @link https://Dah-kenangnon.com
  */
 class MessageController extends BaseController
 {
@@ -55,10 +54,16 @@ class MessageController extends BaseController
 
     /**
      * A single message page
+     * 
+     * @param Request $request
+     * 
+     * @param int $id
+     * 
+     * @return Response
      */
     public function show(Request $request, int $id): Response
     {
-        if(!$request->getUser()){
+        if (!$request->getUser()) {
             return $this->redirect($request, "/login");
         }
 
@@ -79,10 +84,14 @@ class MessageController extends BaseController
 
     /**
      * View my profile page
+     * 
+     * @param Request $request
+     * 
+     * @return Response
      */
     public function mine(Request $request): Response
     {
-        if(!$request->getUser()){
+        if (!$request->getUser()) {
             return $this->redirect($request, "/login");
         }
 
@@ -96,10 +105,13 @@ class MessageController extends BaseController
 
     /**
      * Post new message
+     * @param Request $request
+     * 
+     * @return Response
      */
     public function create(Request $request): Response
     {
-        if(!$request->getUser()){
+        if (!$request->getUser()) {
             return $this->redirect($request, "/login");
         }
 
@@ -115,8 +127,6 @@ class MessageController extends BaseController
         if ($form->isSubmitted()) {
 
             // Check passs correspondance
-            $title = $form->get("title");
-            $content = $form->get("content");
             $user = $request->getUser();
 
             $message = new Message();
@@ -146,16 +156,23 @@ class MessageController extends BaseController
 
     /**
      * Delete a message only the admin
+     * 
+     * @param Request $request
+     * 
+     * @param int $id 
+     * 
+     * @return Response
+     *  
      */
     public function delete(Request $request, int $id)
     {
         $user = $request->getUser();
 
-        if(!$user){
+        if (!$user) {
             return $this->redirect($request, "/login");
         }
 
-        if(!$user->isAdmin()){
+        if (!$user->isAdmin()) {
             return $this->createErrorPage(403, [
                 "error" => "Seul l'admin peut supprimer"
             ]);

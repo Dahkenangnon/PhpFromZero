@@ -7,12 +7,11 @@ use PhpFromZero\Error\FormFieldBadTypeError;
 /**
  * Base class for all form field
  * 
- * @author Justin Dah-kenangnon <dah.kenangnon@epatriote.com>
+ * @author Justin Dah-kenangnon <dah.kenangnon@gmail.com>
  * 
  * @link https://github.com/Dahkenangnon
  * @link https://ePatriote.com
  * @link https://Creative.ePatriote.com
- * @link https://Dah-kenangnon.com
  */
 abstract class FormField
 {
@@ -37,7 +36,7 @@ abstract class FormField
      *
      * @param  array  $attributes
      *
-     * @return  self
+     * 
      */ 
     public function setAttributes(array $attributes)
     {
@@ -70,12 +69,12 @@ abstract class FormField
     /**
      * Set @var $attributeName attribute value to @var $attributeValue
      * 
-     * @return  self
+     * 
      */
     public function set(String $attributeName, $attributeValue)
     {
 
-        if (!is_string($attributeName)) throw  new FormFieldBadTypeError(message: "$attributeName has the bad type");
+        if (!is_string($attributeName)) throw  new FormFieldBadTypeError("$attributeName has the bad type");
 
         $this->attributes[$attributeName] = $attributeValue;
         return $this;

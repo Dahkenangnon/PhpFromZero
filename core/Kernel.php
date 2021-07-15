@@ -11,12 +11,11 @@ use PhpFromZero\Utils\Logger;
  *
  * The app Kernel to handle request and return HTTP Response
  * 
- * @author Justin Dah-kenangnon <dah.kenangnon@epatriote.com>
+ * @author Justin Dah-kenangnon <dah.kenangnon@gmail.com>
  * 
  * @link https://github.com/Dahkenangnon
  * @link https://ePatriote.com
  * @link https://Creative.ePatriote.com
- * @link https://Dah-kenangnon.com
  */
 class Kernel
 {
@@ -34,25 +33,7 @@ class Kernel
        
         $this->config = new Config();
     }
-    // /**
-    //  * Set the router
-    //  * 
-    //  * @param Router $router The router
-    //  * 
-    //  * @return self
-    //  */
-    // public function setRouter(Router $router)
-    // {
-    //     $this->router = $router;
-    //     $this->config = new Config();
-
-    //     print($this->config);
-    //     die();
-
-
-    //     return $this;
-    // }
-
+    
 
 
     /**
@@ -77,8 +58,7 @@ class Kernel
 
         $this->router = new Router(request: $request);
         
-        //die('Hello');
-        $matchedRoute = $this->router->getRoute($request);
+        $matchedRoute = $this->router->getRoute();
         $params = $matchedRoute->vars();
         
         // Instantiate the controller

@@ -9,12 +9,11 @@ use PhpFromZero\HtmlForms\Field\FormField;
 /**
  * Button for the form to be submitted
  * 
- * @author Justin Dah-kenangnon <dah.kenangnon@epatriote.com>
+ * @author Justin Dah-kenangnon <dah.kenangnon@gmail.com>
  * 
  * @link https://github.com/Dahkenangnon
  * @link https://ePatriote.com
  * @link https://Creative.ePatriote.com
- * @link https://Dah-kenangnon.com
  */
 class SubmitField extends FormField
 {
@@ -52,7 +51,7 @@ class SubmitField extends FormField
     /**
      * Set the value of label
      *
-     * @return  self
+     * 
      */ 
     public function setLabel($label)
     {

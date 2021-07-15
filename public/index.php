@@ -7,17 +7,16 @@
  * then get response from the kernel and send this reponse to the browser
  * 
  * 
- * (c) Justin Dah-kenangnon <dah.kenangnon@epatriote.com>
+ * (c) Justin Dah-kenangnon <dah.kenangnon@gmail.com>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  * 
- * @author Justin Dah-kenangnon <dah.kenangnon@epatriote.com>
+ * @author Justin Dah-kenangnon <dah.kenangnon@gmail.com>
  * 
  * @link https://github.com/Dahkenangnon
  * @link https://ePatriote.com
  * @link https://Creative.ePatriote.com
- * @link https://Dah-kenangnon.com
  */
 
 
