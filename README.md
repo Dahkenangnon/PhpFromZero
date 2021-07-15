@@ -10,7 +10,7 @@ Php MVC OOP project templates with no dependencies.
 - Run in the project dir:
 
 ```bash
-php localhost:9000 -t public 
+php -S localhost:9000 -t public 
 ```
 
 - Checkout your browser at <http://localhost:9000> and view page
