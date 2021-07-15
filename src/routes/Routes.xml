@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<routes>
+	<route url="/" controller="HomeController" action="index" />
+	<route url="/about" controller="HomeController" action="about" />
+	<route url="/login" controller="AuthController" action="login" />
+	<route url="/register" controller="AuthController" action="register" />
+	<route url="/logout" controller="AuthController" action="logout" />
+	<route url="/message" controller="MessageController" action="index" />
+	<route url="/message/new" controller="MessageController" action="create" />
+	<route url="/message/mine" controller="MessageController" action="mine" />
+	<route url="/message/show-([0-9]+)" controller="MessageController" action="show" vars="id" />
+	<route url="/message/delete-([0-9]+)" controller="MessageController" action="delete" vars="id" />
+	<route url="/user" controller="UserController" action="index" />
+	<route url="/user/me" controller="UserController" action="me" />
+	<route url="/user/show-([0-9]+)" controller="UserController" action="show" vars="id" />
+	<route url="/user/delete-([0-9]+)" controller="UserController" action="delete" vars="id" />
+</routes>

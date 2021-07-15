@@ -1,0 +1,45 @@
+.center {
+    text-align: center;
+}
+
+.left {
+    text-align: left;
+}
+
+.right {
+    text-align: right;
+}
+
+.bg-red {
+    background-color: red;
+}
+
+.bg-info {
+    background-color: burlywood;
+}
+
+.bg-secondary {
+    background-color: grey;
+}
+
+nav {
+    text-align: center;
+    display: block;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav ul {
+    list-style: none;
+}
+
+.container {
+    border-style: solid;
+    border-radius: 0.05em;
+    border-width: 0.05em;
+    border-color: grey;
+    margin-left: 5%;
+    margin-right: 5%;
+}

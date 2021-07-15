@@ -1,0 +1,8 @@
+{
+    "autoload": {
+        "psr-4": {
+            "PhpFromZero\\": "../core",
+            "App\\": "../src"
+        }
+    }
+}
