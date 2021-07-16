@@ -2,7 +2,7 @@
 
 // This file is required because the core config class
 // uses it to load your params and environments variables
-// The entry defined by default here is required
+// The entries defined by default here is required
 // You can add any entry you wan in the ["params"] section
 return [
     "env" => "dev",

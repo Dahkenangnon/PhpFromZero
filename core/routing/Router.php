@@ -18,87 +18,97 @@ use PhpFromZero\Routing\Route;
  */
 class Router
 {
-  protected $routes = [];
+    /**
+     * The applications routes
+     */
+    protected $routes = [];
 
 
-  /**
-   *  @var Request 
-   */
-  protected $request;
+    /**
+     *  @var Request 
+     */
+    protected $request;
 
 
-  public function __construct(Request $request)
-  {
-    $r = new \ReflectionObject($this);
-    $dir = $r->getFileName();
-    $xml = new \DOMDocument;
-    $xml->load(dirname($dir, 3) . "/src/routes/Routes.xml");
-    $routesXmls = $xml->getElementsByTagName('route');
+    public function __construct(Request $request)
+    {
+        $r = new \ReflectionObject($this);
+        $dir = $r->getFileName();
+        $xml = new \DOMDocument;
+        $xml->load(dirname($dir, 3) . "/src/routes/Routes.xml");
+        $routesXmls = $xml->getElementsByTagName('route');
 
-    // Loop through the project routes defined in the XML files
-    foreach ($routesXmls as $route) {
-      $vars = [];
+        // Loop through the project routes defined in the XML file
+        foreach ($routesXmls as $route) {
+            $vars = [];
 
-      // Has this url some vars ?
-      if ($route->hasAttribute('vars')) {
-        $vars = explode(',', $route->getAttribute('vars'));
-      }
-
-      // Push the route in $this->routes
-      $this->addRoute(new Route(
-        $route->getAttribute('url'),
-        $route->getAttribute('controller'),
-        $route->getAttribute('action'),
-        $vars
-      ));
-    }
-
-    $this->request =   $request;
-  }
-
-
-
-  /**
-   * Get the route matched by this ulr
-   */
-  public function getRoute()
-  {
-    foreach ($this->routes as $route) {
-
-      // If this route match $url
-      if (($varsValues = $route->match($this->request->getUrl())) !== false) {
-
-        // If any variables...
-        if ($route->hasVars()) {
-          $varsNames = $route->varsNames();
-          $listVars = [];
-
-          // Insert these var in $listVars
-          // like: varName => varValue
-          foreach ($varsValues as $key => $match) {
-
-            if ($key !== 0) {
-              $listVars[$varsNames[$key - 1]] = $match;
+            // Is this  url has some vars ?
+            if ($route->hasAttribute('vars')) {
+                $vars = explode(',', $route->getAttribute('vars'));
             }
-          }
 
-          // Now set the route var list
-          $route->setVars($listVars);
+            // Push the route in $this->routes
+            $this->addRoute(new Route(
+                $route->getAttribute('url'),
+                $route->getAttribute('controller'),
+                $route->getAttribute('action'),
+                $vars
+            ));
         }
 
-        return $route;
-      }
+        $this->request =   $request;
     }
 
-    throw  throw new RouteNotFoundError("This url don't match any route");
-  }
 
 
+    /**
+     * Get the route matched by this url
+     */
+    public function getRoute()
+    {
+        foreach ($this->routes as $route) {
 
-  public function addRoute(Route $route)
-  {
-    if (!in_array($route, $this->routes)) {
-      $this->routes[] = $route;
+            // If this route match $url
+            if (($varsValues = $route->match($this->request->getUrl())) !== false) {
+
+                // If any variables...
+                if ($route->hasVars()) {
+                    $varsNames = $route->varsNames();
+                    $listVars = [];
+
+                    // Insert these var in $listVars
+                    // like: varName => varValue
+                    foreach ($varsValues as $key => $match) {
+
+                        if ($key !== 0) {
+                            $listVars[$varsNames[$key - 1]] = $match;
+                        }
+                    }
+
+                    // Now set the route var list
+                    $route->setVars($listVars);
+                }
+
+                return $route;
+            }
+        }
+
+        throw  throw new RouteNotFoundError("This url don't match any route");
     }
-  }
+
+
+
+    /**
+     * 
+     * Push application routes to the router $routes
+     * @param Route $route
+     * 
+     * @return void
+     */
+    public function addRoute(Route $route)
+    {
+        if (!in_array($route, $this->routes)) {
+            $this->routes[] = $route;
+        }
+    }
 }

@@ -40,7 +40,7 @@ class RegisterForm extends FormBuilder
             ->add("email", TextField::class, [
                 "id" => "email",
                 
-                "placeholder"=> "Bossor ton email ici",
+                "placeholder"=> "Bossor, ton email ici",
                 "class"=> "form-control"
             ])
             ->add("name", TextField::class, [

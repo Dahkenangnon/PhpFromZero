@@ -4,6 +4,15 @@ namespace PhpFromZero\Utils;
 
 use PhpFromZero\Config\Config;
 
+/**
+ * Logger application access & error
+ * 
+ * @author Justin Dah-kenangnon <dah.kenangnon@gmail.com>
+ * 
+ * @link https://github.com/Dahkenangnon
+ * @link https://ePatriote.com
+ * @link https://Creative.ePatriote.com
+ */
 class Logger
 {
 

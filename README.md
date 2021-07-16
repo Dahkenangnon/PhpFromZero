@@ -30,6 +30,6 @@ php -S localhost:9000 -t public
 
 :computer: If you want to use this in a real project, you may improve it as this can have many security or performance issues
 
-:computer: For any question, contact contact@epatriote.com ou ping me (@Dahkenangon) directly
+:computer: For any question, contact contact@epatriote.com ou join the discussion: https://github.com/Dahkenangnon/PhpFromZero/discussions
 
 Happy hacking :rocket:

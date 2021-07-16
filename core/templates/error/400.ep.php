@@ -11,7 +11,7 @@
 <body>
 
     <h1>Bad request</h1>
-    Somethin is wrong in your request
+    Something is wrong in your request
 </body>
 
 </html>

@@ -34,7 +34,7 @@ class Orm
      * 
      * @var String
      * The table to query on the database.
-     * This table is related the @var $entityClass
+     * This table is related to the @var $entityClass
      */
     protected $table;
 
@@ -75,7 +75,7 @@ class Orm
         // Reflected entity's properties
         $this->entityReflectionProps   = $this->entityReflection->getProperties(\ReflectionProperty::IS_PROTECTED);
 
-        // The representation of the entity in the database with be the lowercase version of the entity shortname
+        // The representation of the entity in the database with the lowercase version of the entity shortname
         $this->table = strtolower($this->entityReflection->getShortName());
     }
 
@@ -150,7 +150,7 @@ class Orm
 
 
     /**
-     * Find one obect by it id
+     * Find one object by it id
      * 
      * @param int $int
      * 

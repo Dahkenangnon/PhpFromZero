@@ -41,7 +41,6 @@ class Session
     public static function getInstance()
     {
 
-        // Isset the session instance ? Create one in that case
         if (!isset(self::$instance))
         {
             self::$instance = new self;

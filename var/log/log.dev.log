@@ -1,0 +1,120 @@
+ User access  |Date: 16.07.2021 12:49:11   |Route:  /PhpFromZeroMain/public/index.php  |Status:  200
+PhpFromZero\Error\RouteNotFoundError in C:\wamp64\www\PhpFromZeroMain\core\routing\Router.php:96
+Stack trace:
+#0 C:\wamp64\www\PhpFromZeroMain\core\Kernel.php(61): PhpFromZero\Routing\Router->getRoute()
+#1 C:\wamp64\www\PhpFromZeroMain\public\index.php(102): PhpFromZero\Kernel->handle(Object(PhpFromZero\Http\Request))
+#2 {main}  |Date: 16.07.2021 12:49:11   |Route:  /PhpFromZeroMain/public/index.php  |Status:  404
+ User access  |Date: 16.07.2021 12:49:45   |Route:  /PhpFromZeroMain/public/index.php  |Status:  200
+PhpFromZero\Error\RouteNotFoundError in C:\wamp64\www\PhpFromZeroMain\core\routing\Router.php:96
+Stack trace:
+#0 C:\wamp64\www\PhpFromZeroMain\core\Kernel.php(61): PhpFromZero\Routing\Router->getRoute()
+#1 C:\wamp64\www\PhpFromZeroMain\public\index.php(102): PhpFromZero\Kernel->handle(Object(PhpFromZero\Http\Request))
+#2 {main}  |Date: 16.07.2021 12:49:45   |Route:  /PhpFromZeroMain/public/index.php  |Status:  404
+ User access  |Date: 16.07.2021 12:49:45   |Route:  /PhpFromZeroMain/public/index.php  |Status:  200
+PhpFromZero\Error\RouteNotFoundError in C:\wamp64\www\PhpFromZeroMain\core\routing\Router.php:96
+Stack trace:
+#0 C:\wamp64\www\PhpFromZeroMain\core\Kernel.php(61): PhpFromZero\Routing\Router->getRoute()
+#1 C:\wamp64\www\PhpFromZeroMain\public\index.php(102): PhpFromZero\Kernel->handle(Object(PhpFromZero\Http\Request))
+#2 {main}  |Date: 16.07.2021 12:49:45   |Route:  /PhpFromZeroMain/public/index.php  |Status:  404
+ User access  |Date: 16.07.2021 12:49:45   |Route:  /PhpFromZeroMain/public/index.php  |Status:  200
+PhpFromZero\Error\RouteNotFoundError in C:\wamp64\www\PhpFromZeroMain\core\routing\Router.php:96
+Stack trace:
+#0 C:\wamp64\www\PhpFromZeroMain\core\Kernel.php(61): PhpFromZero\Routing\Router->getRoute()
+#1 C:\wamp64\www\PhpFromZeroMain\public\index.php(102): PhpFromZero\Kernel->handle(Object(PhpFromZero\Http\Request))
+#2 {main}  |Date: 16.07.2021 12:49:45   |Route:  /PhpFromZeroMain/public/index.php  |Status:  404
+ User access  |Date: 16.07.2021 12:49:46   |Route:  /PhpFromZeroMain/public/index.php  |Status:  200
+PhpFromZero\Error\RouteNotFoundError in C:\wamp64\www\PhpFromZeroMain\core\routing\Router.php:96
+Stack trace:
+#0 C:\wamp64\www\PhpFromZeroMain\core\Kernel.php(61): PhpFromZero\Routing\Router->getRoute()
+#1 C:\wamp64\www\PhpFromZeroMain\public\index.php(102): PhpFromZero\Kernel->handle(Object(PhpFromZero\Http\Request))
+#2 {main}  |Date: 16.07.2021 12:49:46   |Route:  /PhpFromZeroMain/public/index.php  |Status:  404
+ User access  |Date: 16.07.2021 12:50:12   |Route:  /PhpFromZeroMain/public/  |Status:  200
+PhpFromZero\Error\RouteNotFoundError in C:\wamp64\www\PhpFromZeroMain\core\routing\Router.php:96
+Stack trace:
+#0 C:\wamp64\www\PhpFromZeroMain\core\Kernel.php(61): PhpFromZero\Routing\Router->getRoute()
+#1 C:\wamp64\www\PhpFromZeroMain\public\index.php(102): PhpFromZero\Kernel->handle(Object(PhpFromZero\Http\Request))
+#2 {main}  |Date: 16.07.2021 12:50:12   |Route:  /PhpFromZeroMain/public/  |Status:  404
+ User access  |Date: 16.07.2021 12:50:49   |Route:  /PhpFromZeroMain/public/  |Status:  200
+PhpFromZero\Error\RouteNotFoundError in C:\wamp64\www\PhpFromZeroMain\core\routing\Router.php:96
+Stack trace:
+#0 C:\wamp64\www\PhpFromZeroMain\core\Kernel.php(61): PhpFromZero\Routing\Router->getRoute()
+#1 C:\wamp64\www\PhpFromZeroMain\public\index.php(102): PhpFromZero\Kernel->handle(Object(PhpFromZero\Http\Request))
+#2 {main}  |Date: 16.07.2021 12:50:49   |Route:  /PhpFromZeroMain/public/  |Status:  404
+ User access  |Date: 16.07.2021 12:52:00   |Route:  /PhpFromZeroMain/public/  |Status:  200
+PhpFromZero\Error\RouteNotFoundError in C:\wamp64\www\PhpFromZeroMain\core\routing\Router.php:96
+Stack trace:
+#0 C:\wamp64\www\PhpFromZeroMain\core\Kernel.php(61): PhpFromZero\Routing\Router->getRoute()
+#1 C:\wamp64\www\PhpFromZeroMain\public\index.php(102): PhpFromZero\Kernel->handle(Object(PhpFromZero\Http\Request))
+#2 {main}  |Date: 16.07.2021 12:52:00   |Route:  /PhpFromZeroMain/public/  |Status:  404
+ User access  |Date: 16.07.2021 12:52:24   |Route:  /PhpFromZeroMain/public/  |Status:  200
+PhpFromZero\Error\RouteNotFoundError in C:\wamp64\www\PhpFromZeroMain\core\routing\Router.php:96
+Stack trace:
+#0 C:\wamp64\www\PhpFromZeroMain\core\Kernel.php(61): PhpFromZero\Routing\Router->getRoute()
+#1 C:\wamp64\www\PhpFromZeroMain\public\index.php(102): PhpFromZero\Kernel->handle(Object(PhpFromZero\Http\Request))
+#2 {main}  |Date: 16.07.2021 12:52:24   |Route:  /PhpFromZeroMain/public/  |Status:  404
+ User access  |Date: 16.07.2021 12:52:35   |Route:  /PhpFromZeroMain/public/  |Status:  200
+PhpFromZero\Error\RouteNotFoundError in C:\wamp64\www\PhpFromZeroMain\core\routing\Router.php:96
+Stack trace:
+#0 C:\wamp64\www\PhpFromZeroMain\core\Kernel.php(61): PhpFromZero\Routing\Router->getRoute()
+#1 C:\wamp64\www\PhpFromZeroMain\public\index.php(102): PhpFromZero\Kernel->handle(Object(PhpFromZero\Http\Request))
+#2 {main}  |Date: 16.07.2021 12:52:35   |Route:  /PhpFromZeroMain/public/  |Status:  404
+ User access  |Date: 16.07.2021 12:52:37   |Route:  /PhpFromZeroMain/public/  |Status:  200
+PhpFromZero\Error\RouteNotFoundError in C:\wamp64\www\PhpFromZeroMain\core\routing\Router.php:96
+Stack trace:
+#0 C:\wamp64\www\PhpFromZeroMain\core\Kernel.php(61): PhpFromZero\Routing\Router->getRoute()
+#1 C:\wamp64\www\PhpFromZeroMain\public\index.php(102): PhpFromZero\Kernel->handle(Object(PhpFromZero\Http\Request))
+#2 {main}  |Date: 16.07.2021 12:52:37   |Route:  /PhpFromZeroMain/public/  |Status:  404
+ User access  |Date: 16.07.2021 12:52:50   |Route:  /PhpFromZeroMain/public/  |Status:  200
+PhpFromZero\Error\RouteNotFoundError in C:\wamp64\www\PhpFromZeroMain\core\routing\Router.php:96
+Stack trace:
+#0 C:\wamp64\www\PhpFromZeroMain\core\Kernel.php(61): PhpFromZero\Routing\Router->getRoute()
+#1 C:\wamp64\www\PhpFromZeroMain\public\index.php(102): PhpFromZero\Kernel->handle(Object(PhpFromZero\Http\Request))
+#2 {main}  |Date: 16.07.2021 12:52:50   |Route:  /PhpFromZeroMain/public/  |Status:  404
+ User access  |Date: 16.07.2021 12:52:50   |Route:  /PhpFromZeroMain/public/  |Status:  200
+PhpFromZero\Error\RouteNotFoundError in C:\wamp64\www\PhpFromZeroMain\core\routing\Router.php:96
+Stack trace:
+#0 C:\wamp64\www\PhpFromZeroMain\core\Kernel.php(61): PhpFromZero\Routing\Router->getRoute()
+#1 C:\wamp64\www\PhpFromZeroMain\public\index.php(102): PhpFromZero\Kernel->handle(Object(PhpFromZero\Http\Request))
+#2 {main}  |Date: 16.07.2021 12:52:50   |Route:  /PhpFromZeroMain/public/  |Status:  404
+ User access  |Date: 16.07.2021 12:52:51   |Route:  /PhpFromZeroMain/public/  |Status:  200
+PhpFromZero\Error\RouteNotFoundError in C:\wamp64\www\PhpFromZeroMain\core\routing\Router.php:96
+Stack trace:
+#0 C:\wamp64\www\PhpFromZeroMain\core\Kernel.php(61): PhpFromZero\Routing\Router->getRoute()
+#1 C:\wamp64\www\PhpFromZeroMain\public\index.php(102): PhpFromZero\Kernel->handle(Object(PhpFromZero\Http\Request))
+#2 {main}  |Date: 16.07.2021 12:52:51   |Route:  /PhpFromZeroMain/public/  |Status:  404
+ User access  |Date: 16.07.2021 12:56:38   |Route:  /PhpFromZeroMain/public/  |Status:  200
+PhpFromZero\Error\RouteNotFoundError in C:\wamp64\www\PhpFromZeroMain\core\routing\Router.php:96
+Stack trace:
+#0 C:\wamp64\www\PhpFromZeroMain\core\Kernel.php(61): PhpFromZero\Routing\Router->getRoute()
+#1 C:\wamp64\www\PhpFromZeroMain\public\index.php(102): PhpFromZero\Kernel->handle(Object(PhpFromZero\Http\Request))
+#2 {main}  |Date: 16.07.2021 12:56:38   |Route:  /PhpFromZeroMain/public/  |Status:  404
+ User access  |Date: 16.07.2021 12:56:48   |Route:  /PhpFromZeroMain/public/  |Status:  200
+PhpFromZero\Error\RouteNotFoundError in C:\wamp64\www\PhpFromZeroMain\core\routing\Router.php:96
+Stack trace:
+#0 C:\wamp64\www\PhpFromZeroMain\core\Kernel.php(61): PhpFromZero\Routing\Router->getRoute()
+#1 C:\wamp64\www\PhpFromZeroMain\public\index.php(102): PhpFromZero\Kernel->handle(Object(PhpFromZero\Http\Request))
+#2 {main}  |Date: 16.07.2021 12:56:48   |Route:  /PhpFromZeroMain/public/  |Status:  404
+ User access  |Date: 16.07.2021 12:56:48   |Route:  /PhpFromZeroMain/public/  |Status:  200
+PhpFromZero\Error\RouteNotFoundError in C:\wamp64\www\PhpFromZeroMain\core\routing\Router.php:96
+Stack trace:
+#0 C:\wamp64\www\PhpFromZeroMain\core\Kernel.php(61): PhpFromZero\Routing\Router->getRoute()
+#1 C:\wamp64\www\PhpFromZeroMain\public\index.php(102): PhpFromZero\Kernel->handle(Object(PhpFromZero\Http\Request))
+#2 {main}  |Date: 16.07.2021 12:56:48   |Route:  /PhpFromZeroMain/public/  |Status:  404
+ User access  |Date: 16.07.2021 12:56:49   |Route:  /PhpFromZeroMain/public/  |Status:  200
+PhpFromZero\Error\RouteNotFoundError in C:\wamp64\www\PhpFromZeroMain\core\routing\Router.php:96
+Stack trace:
+#0 C:\wamp64\www\PhpFromZeroMain\core\Kernel.php(61): PhpFromZero\Routing\Router->getRoute()
+#1 C:\wamp64\www\PhpFromZeroMain\public\index.php(102): PhpFromZero\Kernel->handle(Object(PhpFromZero\Http\Request))
+#2 {main}  |Date: 16.07.2021 12:56:49   |Route:  /PhpFromZeroMain/public/  |Status:  404
+ User access  |Date: 16.07.2021 12:56:49   |Route:  /PhpFromZeroMain/public/  |Status:  200
+PhpFromZero\Error\RouteNotFoundError in C:\wamp64\www\PhpFromZeroMain\core\routing\Router.php:96
+Stack trace:
+#0 C:\wamp64\www\PhpFromZeroMain\core\Kernel.php(61): PhpFromZero\Routing\Router->getRoute()
+#1 C:\wamp64\www\PhpFromZeroMain\public\index.php(102): PhpFromZero\Kernel->handle(Object(PhpFromZero\Http\Request))
+#2 {main}  |Date: 16.07.2021 12:56:49   |Route:  /PhpFromZeroMain/public/  |Status:  404
+ User access  |Date: 16.07.2021 12:56:49   |Route:  /PhpFromZeroMain/public/  |Status:  200
+PhpFromZero\Error\RouteNotFoundError in C:\wamp64\www\PhpFromZeroMain\core\routing\Router.php:96
+Stack trace:
+#0 C:\wamp64\www\PhpFromZeroMain\core\Kernel.php(61): PhpFromZero\Routing\Router->getRoute()
+#1 C:\wamp64\www\PhpFromZeroMain\public\index.php(102): PhpFromZero\Kernel->handle(Object(PhpFromZero\Http\Request))
+#2 {main}  |Date: 16.07.2021 12:56:49   |Route:  /PhpFromZeroMain/public/  |Status:  404

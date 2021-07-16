@@ -30,9 +30,6 @@ class MessageController extends BaseController
         parent::__construct();
 
         $this->messageRepo = new MessageRepository();
-
-        // echo 'HI';
-        // die();
     }
 
 
@@ -105,6 +102,7 @@ class MessageController extends BaseController
 
     /**
      * Post new message
+     * 
      * @param Request $request
      * 
      * @return Response
@@ -155,7 +153,7 @@ class MessageController extends BaseController
 
 
     /**
-     * Delete a message only the admin
+     * Delete a message
      * 
      * @param Request $request
      * 

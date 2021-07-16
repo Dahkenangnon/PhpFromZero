@@ -28,10 +28,6 @@ class Files
 
     public function get(string $key)
     {
-        // print_r($this->container[$key]);
-
-        // die();
-
         return $this->container[$key];
         return new File($this->container[$key]);
     }
@@ -60,9 +56,6 @@ class Files
         if (!isset($firstElement) or empty($firstElement["name"])) {
             return false;
         }
-
-
-        //print_r($fileEntry);
 
         return true;
     }

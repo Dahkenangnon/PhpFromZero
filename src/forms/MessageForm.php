@@ -34,6 +34,7 @@ class MessageForm extends FormBuilder
     {
     
 
+       //Here we are overriding the Message submitted button's label
        $this->submitButton->setLabel("Poster");
 
         $this

@@ -20,11 +20,10 @@
  */
 
 
-// Include autoload, require to load classes
+// Include autoload, required to load classes
 require __DIR__ . '/../core/autoloader.php';
 
 
-// Use the Request and the Kernel
 use PhpFromZero\Http\Request;
 use PhpFromZero\Kernel;
 use PhpFromZero\Config\Config;
@@ -33,13 +32,13 @@ use PhpFromZero\Utils\Logger;
 use PhpFromZero\Utils\Utils;
 
 
-// We need the HTPP Request
-$request = new Request();
 
 
-
-// Handle error
+// We are setting our costum error handler
+// So, for any error, Php will call this function
 set_exception_handler('exception_handler');
+
+
 
 /**
  * This function handle all error non caught in the code
@@ -53,7 +52,8 @@ function exception_handler($e)
     global $request;
 
 
-    // Loggin can be enable or not
+    // Loggin can be enable or disable
+    // See param in env.local.php for more information
     if ($config->get("enableLog")) {
         // Log error
         $logger::log(
@@ -91,10 +91,14 @@ function exception_handler($e)
 }
 
 
+// We need the HTPP Request
+$request = new Request();
+
+
 // We need the Kernel to handle request
 $kernel = new Kernel();
 
-// When a Request is send to this file, the Kernel handle it and get a Response object
+// When a Request is sent to this file, the Kernel handle it and get a Response object
 $response = $kernel->handle($request);
 
 // When everything is done (Routing, Controller and action, Database, etc), we send response to the browser and terminate the request

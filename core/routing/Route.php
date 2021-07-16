@@ -1,7 +1,7 @@
 <?php
 
 namespace PhpFromZero\Routing;
- 
+
 
 
 
@@ -16,120 +16,148 @@ namespace PhpFromZero\Routing;
  */
 class Route
 {
-  protected $action;
-  protected $controller;
-  protected $url;
-  protected $varsNames;
-  protected $vars = [];
- 
-  public function __construct($url, $controller, $action, array $varsNames)
-  {
-    $this->setUrl($url);
-    $this->setController($controller);
-    $this->setAction($action);
-    $this->setVarsNames($varsNames);
-  }
- 
+    protected $action;
+    protected $controller;
+    protected $url;
+    protected $varsNames;
+    protected $vars = [];
 
-  /**
-   * Check whether this route has variables
-   * @return bool
-   */
-  public function hasVars()
-  {
-    return !empty($this->varsNames);
-  }
- 
-
-  /**
-   * Check wether this route matched the given route url
-   */
-  public function match($url)
-  {
-    if (preg_match('`^'.$this->url.'$`', $url, $matches))
+    public function __construct($url, $controller, $action, array $varsNames)
     {
-      return $matches;
+        $this->setUrl($url);
+        $this->setController($controller);
+        $this->setAction($action);
+        $this->setVarsNames($varsNames);
     }
-    else
+
+
+    /**
+     * Check whether this route has variables
+     * 
+     * @return bool
+     */
+    public function hasVars()
     {
-      return false;
+        return !empty($this->varsNames);
     }
-  }
- 
 
-  /**
-   * Set the route action
-   */
-  public function setAction($action)
-  {
-    if (is_string($action))
+
+    /**
+     * Check wether this route matched the given route url
+     * 
+     * @param string $url
+     * 
+     *  @return bool
+     */
+    public function match($url)
     {
-      $this->action = $action;
+        if (preg_match('`^' . $this->url . '$`', $url, $matches)) {
+            return $matches;
+        } else {
+            return false;
+        }
     }
-  }
- 
-  /**
-   * Set the controller of the route
-   */
-  public function setController($controller)
-  {
-    if (is_string($controller))
+
+
+    /**
+     * Set the route action
+     * 
+     * @param string $action
+     * 
+     * @return void
+     */
+    public function setAction($action)
     {
-      $this->controller = $controller;
+        if (is_string($action)) {
+            $this->action = $action;
+        }
     }
-  }
- 
 
-  /**
-   * Set the url of this route
-   */
-  public function setUrl($url)
-  {
-    if (is_string($url))
+    /**
+     * Set the controller of the route
+     * 
+     * @param string $controller
+     * 
+     * @return void
+     */
+    public function setController($controller)
     {
-      $this->url = $url;
+        if (is_string($controller)) {
+            $this->controller = $controller;
+        }
     }
-  }
- 
 
-  /**
-   * Set the route variables name
-   */
-  public function setVarsNames(array $varsNames)
-  {
-    $this->varsNames = $varsNames;
-  }
- 
 
-  /**
-   * Set the variables 
-   */
-  public function setVars(array $vars)
-  {
-    $this->vars = $vars;
-  }
- 
+    /**
+     * Set the url of this route
+     * 
+     * @param string $url
+     * 
+     * @return void
+     */
+    public function setUrl($url)
+    {
+        if (is_string($url)) {
+            $this->url = $url;
+        }
+    }
 
-   /**
-   * Set the action 
-   */
-  public function action()
-  {
-    return $this->action;
-  }
- 
-  public function controller()
-  {
-    return $this->controller;
-  }
- 
-  public function vars()
-  {
-    return $this->vars;
-  }
- 
-  public function varsNames()
-  {
-    return $this->varsNames;
-  }
+
+    /**
+     * Set the route variables name
+     * 
+     * @param array $varsNames
+     * 
+     * @return void
+     */
+    public function setVarsNames(array $varsNames)
+    {
+        $this->varsNames = $varsNames;
+    }
+
+
+    /**
+     * Set the variables 
+     * 
+     * @param array $vars
+     * 
+     * @return void
+     */
+    public function setVars(array $vars)
+    {
+        $this->vars = $vars;
+    }
+
+
+    /**
+     * Set the action 
+     */
+    public function action()
+    {
+        return $this->action;
+    }
+
+    /**
+     * Get the route controller
+     */
+    public function controller()
+    {
+        return $this->controller;
+    }
+
+    /**
+     * Get the route vars values
+     */
+    public function vars()
+    {
+        return $this->vars;
+    }
+
+    /**
+     * Get the route variables names
+     */
+    public function varsNames()
+    {
+        return $this->varsNames;
+    }
 }

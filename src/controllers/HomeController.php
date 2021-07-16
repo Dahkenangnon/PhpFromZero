@@ -62,7 +62,6 @@ class HomeController extends BaseController
      */
     public function about(Request $request)
     {
-
         return $this->render('home/about.ep.php', []);
     }
 }

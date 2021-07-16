@@ -28,7 +28,7 @@ class Message extends BaseEntity
 
     
     /**
-     * @var int The User it who post the message 
+     * @var int The User id who post the message 
      */
     protected $authorid;
 
@@ -84,7 +84,7 @@ class Message extends BaseEntity
 
 
     /**
-     * Get the User it who post the message
+     * Get the User id who post the message
      *
      * @return  int
      */ 
@@ -94,9 +94,9 @@ class Message extends BaseEntity
     }
 
     /**
-     * Set the User it who post the message
+     * Set the User id who post the message
      *
-     * @param  int  $authorid  The User it who post the message
+     * @param  int  $authorid  The User id who post the message
      *
      */ 
     public function setAuthorid(int $authorid)

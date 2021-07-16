@@ -112,7 +112,6 @@ class Utils
             $ext = self::getExtention($file["name"]);
             $uploadedName = $date->getTimestamp() . '.' . $ext;
 
-            // ... uploading...
             move_uploaded_file($file['tmp_name'], "$uploadDir/$uploadedName");
 
             return $uploadedName;

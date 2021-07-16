@@ -6,7 +6,7 @@ use ArrayAccess;
 /**
  * Entity base class
  * 
- * Implement ArrayAccess to allow all our entity to be use as array
+ * Implement ArrayAccess to allow all our entities to be used as array
  * 
  * @author Justin Dah-kenangnon <dah.kenangnon@gmail.com>
  * 
@@ -40,7 +40,6 @@ class BaseEntity  implements ArrayAccess
     }
 
 
-    // To be used for implement ArrayAccess methods
     private $container = array();
 
 
