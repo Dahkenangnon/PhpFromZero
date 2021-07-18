@@ -56,7 +56,7 @@ class BaseEntity  implements ArrayAccess
 
             // This is necessary because using $prop->getvalue() 
             //will throw no access to protected properties. SO by 
-            //doing this, we use the getter of the current object
+            //doing this, we use the getter of the current object prop
             $getter = "get" . ucfirst($name); 
             $value = $this->$getter();
 

@@ -3,9 +3,9 @@
 // This file is required because the core config class
 // uses it to load your params and environments variables
 // The entries defined by default here is required
-// You can add any entry you wan in the ["params"] section
+// You can add any entry you want in the ["params"] section
 return [
-    "env" => "dev",
+    "env" => "prod",
     "enableLog" => true,
     "baseurl" => "http://localhost:9000",
     "params" => [

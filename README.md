@@ -24,6 +24,13 @@ php -S localhost:9000 -t public
 
 ## Attention :warning:
 
+:computer: You need Php 8 or uper to run this project. So if you're using Wamp or Xampp, please tutorials  for:
+
+- Wamp: https://www.myonlineedu.com/blog/view/16/how-to-update-to-php-8-in-wamp-server-localhost
+
+
+- Xampp: https://php.tutorials24x7.com/blog/update-php-version-to-php-8-in-xampp-on-windows
+
 :computer: Tutorial will be available at: <https://creative.epatriote.com/>
 
 :computer: Use this template on your own risk

@@ -86,7 +86,7 @@ class MessageController extends BaseController
      * 
      * @return Response
      */
-    public function mine(Request $request): Response
+    public function mine(Request $request)
     {
         if (!$request->getUser()) {
             return $this->redirect($request, "/login");

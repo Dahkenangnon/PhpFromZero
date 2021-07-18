@@ -6,7 +6,6 @@ namespace PhpFromZero\Controller;
 use PhpFromZero\Config\Config;
 use PhpFromZero\Http\Request;
 use PhpFromZero\Http\Response;
-use PhpFromZero\Routing\Router;
 use PhpFromZero\Utils\Utils;
 
 /**
