@@ -129,7 +129,7 @@ class AuthController extends SecurityController
             }
 
             // Has password before saving it into database
-            $hasedPassword = $this->hasPassword($password);
+            $hasedPassword = $this->hashPassword($password);
 
             // Getting data from the form
             $user = new User();

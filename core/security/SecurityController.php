@@ -21,18 +21,20 @@ abstract class SecurityController extends BaseController
 {
 
     /**
-     * @var int The Max lenght of the raw password
+     * @var int The Max length of the raw password
      */
     private const MAX_PASSWORD_LENGTH = 4096;
 
 
     /**
+     * Hash the password using argon2i
+     * 
      * @param String $raw The password in clear text
      * 
      * @return String The hashed version of the password
      * 
      */
-    public function hasPassword(string $raw): string
+    public function hashPassword(string $raw): string
     {
         // Make sure user don't provide a too long password
         if (\strlen($raw) > self::MAX_PASSWORD_LENGTH) {

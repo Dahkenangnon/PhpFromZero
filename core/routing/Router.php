@@ -25,7 +25,7 @@ class Router
 
 
     /**
-     *  @var Request 
+     *  @var Request  The http request object
      */
     protected $request;
 
@@ -56,6 +56,7 @@ class Router
             ));
         }
 
+        // Seting the request
         $this->request =   $request;
     }
 
@@ -63,6 +64,8 @@ class Router
 
     /**
      * Get the route matched by this url
+     * 
+     * @return Route
      */
     public function getRoute()
     {
@@ -85,6 +88,7 @@ class Router
                         }
                     }
 
+
                     // Now set the route var list
                     $route->setVars($listVars);
                 }
@@ -93,14 +97,15 @@ class Router
             }
         }
 
-          throw new RouteNotFoundError("This url don't match any route");
+        throw new RouteNotFoundError("This url don't match any route");
     }
 
 
 
     /**
      * 
-     * Push application routes to the router $routes
+     * Push application routes to the router @property $routes
+     * 
      * @param Route $route
      * 
      * @return void

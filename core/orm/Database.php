@@ -27,7 +27,7 @@ class Database
     private $_connection;
 
     /**
-     * @var Config The configuration container
+     * @var Config The configuration component
      */
     protected $config;
 

@@ -36,6 +36,7 @@ class TextField extends FormField
         }
         
         return $this->view." />";
+
     }
 
     /**

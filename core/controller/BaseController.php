@@ -30,11 +30,8 @@ class BaseController
 
     public function __construct()
     {
-        $this->config = new Config();
-
-        
+        $this->config = new Config(); 
     }
-
 
 
     /**
@@ -54,7 +51,7 @@ class BaseController
         $projectDir = $this->config->getProjectDir();
 
          // Make available our defined function to be used in the templates
-         include_once($projectDir . '/core/templates/functions/dot.ep.php');
+        include_once($projectDir . '/core/templates/functions/dot.ep.php');
 
 
         // Define the 2 templates: core or user defined

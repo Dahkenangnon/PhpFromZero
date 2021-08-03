@@ -84,8 +84,7 @@ abstract class FormBuilder
     ) {
 
         // Form name and it same as the form class name
-        $this->name = $this->getMyName();
-        $this->id = $this->getMyName();
+        $this->id = $this->name = $this->getMyName();
 
         $this->fields = [];
 

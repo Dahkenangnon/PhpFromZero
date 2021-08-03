@@ -17,6 +17,9 @@ use ArrayAccess;
 class BaseEntity  implements ArrayAccess
 {
 
+    /**
+     * @var int $id This object id
+     */
     protected $id;
 
     /**

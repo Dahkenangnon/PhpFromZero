@@ -3,6 +3,7 @@
 namespace  PhpFromZero;
 
 use PhpFromZero\Config\Config;
+use PhpFromZero\Error\ControllerMethodNotFoundError;
 use PhpFromZero\Http\Request;
 use PhpFromZero\Routing\Router;
 use PhpFromZero\Utils\Logger;
@@ -24,16 +25,19 @@ class Kernel
      */
     protected $router;
 
-  
+
+    /**
+     * @var Config The configuration component
+     */
     protected $config;
 
 
     public function __construct()
     {
-       
+
         $this->config = new Config();
     }
-    
+
 
 
     /**
@@ -46,7 +50,7 @@ class Kernel
     public function handle(Request $request)
     {
 
-        // Loggin can be enable or not
+        // Log can be enable or not in your env.local.php file located in the project root dir
         if ($this->config->get("enableLog")) {
             // Log access
             Logger::log(
@@ -56,19 +60,25 @@ class Kernel
             );
         }
 
+        // Instantiate a router for routing
         $this->router = new Router(request: $request);
-        
+
+        // Get the matched route
         $matchedRoute = $this->router->getRoute();
-        $params = $matchedRoute->vars();
         
+        // Eventual params
+        $params = $matchedRoute->vars();
+        // The action to execute
+        $action = $matchedRoute->action();
+
         // Instantiate the controller
         $controllerClass = 'App\\Controllers\\' . $matchedRoute->controller();
         $newController = new $controllerClass;
 
-        $action = $matchedRoute->action();
+        // Make sure the action is callable
+        if(!method_exists($newController, $action)) throw new ControllerMethodNotFoundError();
 
         // Call the action and get back response
         return $newController->$action($request, ...$params);
     }
-   
 }

@@ -1,11 +1,12 @@
 <?php 
-namespace App\Repositories;
 
-use App\Entities\Message;
-use PhpFromZero\Orm\Orm;
+namespace PhpFromZero\Error;
+
+use PhpFromZero\Error\BaseError;
+
 
 /**
- * Message repository
+ * Controller Method Not Found error
  * 
  * @author Justin Dah-kenangnon <dah.kenangnon@gmail.com>
  * 
@@ -13,10 +14,10 @@ use PhpFromZero\Orm\Orm;
  * @link https://ePatriote.com
  * @link https://Creative.ePatriote.com
  */
-class MessageRepository extends Orm {
+class ControllerMethodNotFoundError extends BaseError{
 
     public function __construct()
     {
-        parent::__construct(Message::class);
+        http_response_code(500);
     }
 }

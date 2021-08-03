@@ -28,7 +28,6 @@ class RegisterForm extends FormBuilder
         ]);
     }
 
-
     /**
      * Build the form
      */
@@ -36,6 +35,8 @@ class RegisterForm extends FormBuilder
     {
         // Override thing here like, submit button label, form name, form id
         
+        //$this->submitButton->setLabel("S'inscrire");
+
         $this
             ->add("email", TextField::class, [
                 "id" => "email",
@@ -51,7 +52,6 @@ class RegisterForm extends FormBuilder
             ])
             ->add("photo", FileField::class, [
                 "id" => "photo",
-                "placeholder"=> "Photo de profile",
                 "class"=> "form-control"
             ])
             ->add("age", NumberField::class, [

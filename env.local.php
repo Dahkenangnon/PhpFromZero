@@ -6,10 +6,11 @@
 // You can add any entry you want in the ["params"] section
 return [
     "env" => "prod",
-    "enableLog" => true,
+    "enableLog" => false,
     "baseurl" => "http://localhost:9000",
     "params" => [
-        "maintenance" => false
+        "maintenance" => false,
+        "maintenance_msg" => "We are now working on the site. Please see you later"
     ],
     "database" => [
         "host" => "localhost",

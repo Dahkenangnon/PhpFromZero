@@ -2,9 +2,6 @@
 
 namespace PhpFromZero\Routing;
 
-
-
-
 /**
  * Route
  * 
@@ -16,10 +13,29 @@ namespace PhpFromZero\Routing;
  */
 class Route
 {
+    /**
+     * @var string $action Method which will be call
+     */
     protected $action;
+
+    /**
+     * @var string $controller The controller class name
+     */
     protected $controller;
+
+    /**
+     * @var string $url Url of this route
+     */
     protected $url;
+
+    /**
+     * @var array $varsNames The variables names
+     */
     protected $varsNames;
+
+    /**
+     * @var array $vars The variables values
+     */
     protected $vars = [];
 
     public function __construct($url, $controller, $action, array $varsNames)

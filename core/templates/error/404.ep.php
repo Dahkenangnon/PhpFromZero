@@ -14,6 +14,9 @@
     The page you're searching for is not found. <br>
 
     You go forward to <a href="/"> the home page</a>
+
+    <h2>Provided by PhpFromZero</h2>
+
 </body>
 
 </html>

@@ -14,6 +14,9 @@
     The serveur encountered an error<br>
 
     Please, if the error persist, contact us at: <a href="mailto:webmaster@oursite.com">webmaster@oursite.com</a>
+
+    <h2>Provided by PhpFromZero</h2>
+
 </body>
 
 </html>
