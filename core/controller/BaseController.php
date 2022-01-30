@@ -16,7 +16,7 @@ use PhpFromZero\Utils\Utils;
  * 
  * @link https://github.com/Dahkenangnon
  * @link https://ePatriote.com
- * @link https://Creative.ePatriote.com
+ * @link https://LaSyntax.com
  
  */
 class BaseController
@@ -40,7 +40,7 @@ class BaseController
      * 
      * @param String $viewPath The path relatively to the root templates dir
      * 
-     * @param array $_ Paramers or variables needed by the templates
+     * @param array $_ Paramers or variables needed by the templates. Treated as global variables in all the templates
      * 
      * @return Response The HTTP response object
      */
@@ -51,7 +51,7 @@ class BaseController
         $projectDir = $this->config->getProjectDir();
 
          // Make available our defined function to be used in the templates
-        include_once($projectDir . '/core/templates/functions/dot.ep.php');
+        include_once($projectDir . '/core/templates/functions/globals.php');
 
 
         // Define the 2 templates: core or user defined

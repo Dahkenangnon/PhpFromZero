@@ -11,7 +11,7 @@ use PhpFromZero\Entity\BaseEntity;
  * 
  * @link https://github.com/Dahkenangnon
  * @link https://ePatriote.com
- * @link https://Creative.ePatriote.com
+ * @link https://LaSyntax.com
  */
 class User extends BaseEntity
 {

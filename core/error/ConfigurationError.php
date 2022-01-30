@@ -12,7 +12,7 @@ use Exception;
  * 
  * @link https://github.com/Dahkenangnon
  * @link https://ePatriote.com
- * @link https://Creative.ePatriote.com
+ * @link https://LaSyntax.com
  */
 class ConfigurationError extends Exception{
 

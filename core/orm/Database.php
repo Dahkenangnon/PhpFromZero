@@ -12,11 +12,12 @@ use PhpFromZero\Error\OrmError;
  * 
  * @link https://github.com/Dahkenangnon
  * @link https://ePatriote.com
- * @link https://Creative.ePatriote.com
+ * @link https://LaSyntax.com
  */
 class Database
 {
-    /**
+    /**   
+     *            
      * The class instance
      */
     private static $_instance;
@@ -30,7 +31,6 @@ class Database
      * @var Config The configuration component
      */
     protected $config;
-
 
 
     /**

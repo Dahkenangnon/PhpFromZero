@@ -1,0 +1,4 @@
+# List here file or folder you want git to ignore
+
+/var/log/*
+/var/cache/*

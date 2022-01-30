@@ -16,7 +16,7 @@ use PhpFromZero\Http\Bag\Get;
  * 
  * @link https://github.com/Dahkenangnon
  * @link https://ePatriote.com
- * @link https://Creative.ePatriote.com
+ * @link https://LaSyntax.com
  */
 class Request
 {

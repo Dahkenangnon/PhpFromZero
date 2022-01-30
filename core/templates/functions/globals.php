@@ -21,7 +21,6 @@ $ep_project_root = $coreConf->getProjectDir();
 
 
 
-
 // Functions exposed to our templates
 // Note that you can use any php builtin function inside your ep.php templates
 
