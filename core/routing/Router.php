@@ -10,6 +10,8 @@ use PhpFromZero\Routing\Route;
  * 
  * The route manager
  * 
+ * Will use the routes diffined in the src/routes/routes.xml as a Php Route Object.
+ * 
  * @author Justin Dah-kenangnon <dah.kenangnon@gmail.com>
  * 
  * @link https://github.com/Dahkenangnon

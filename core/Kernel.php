@@ -12,6 +12,8 @@ use PhpFromZero\Utils\Logger;
  *
  * The app Kernel to handle request and return HTTP Response
  * 
+ * All request pass away this Object.
+ * 
  * @author Justin Dah-kenangnon <dah.kenangnon@gmail.com>
  * 
  * @link https://github.com/Dahkenangnon

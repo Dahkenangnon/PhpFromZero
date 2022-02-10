@@ -12,6 +12,10 @@ use PhpFromZero\Http\Bag\Get;
  * 
  * The HTTP request
  * 
+ * Take this as: "Hey website, i want to view the content of this page". 
+ * 
+ * 
+ * 
  * @author Justin Dah-kenangnon <dah.kenangnon@gmail.com>
  * 
  * @link https://github.com/Dahkenangnon

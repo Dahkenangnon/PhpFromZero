@@ -2,6 +2,8 @@
 
 /**
  * This file is the first one which is call when  PhpFromZero get an HTTP request
+ * 
+ * It is call usually the FRONT CONTROLLER
  *
  * It main role is to get request, delegate the handling process to the kernel
  * then get response from the kernel and send this reponse to the browser
@@ -37,6 +39,18 @@ use PhpFromZero\Utils\Utils;
 // We are setting our costum error handler
 // So, for any error, Php will call this function
 // Like that, we can handle error as we want
+//
+//
+// This is not required for this particular project
+// because we're are in an education purpose.
+// But you might take in mind that in real project, it is required
+
+//
+// This is useful to show to visitors a 404 Error page in production and a debug page (with 
+// more technical details which can be critical) when in dev mode.
+
+// This is just an example to show you how this is useful
+//
 set_exception_handler('exception_handler');
 
 
@@ -117,3 +131,6 @@ $response = $kernel->handle($request);
 // When everything is done (Routing, Controller>action, Database, form, log, etc),
 // we send response to the browser and terminate the request
 $response->send();
+
+// Response is sent to the browser.
+// Another request is waiting... (Remember, HTTP is Stateless)

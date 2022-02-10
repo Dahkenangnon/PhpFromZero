@@ -4,7 +4,7 @@ Handcrafted PHP OOP project templates using MVC design with no dependencies.
 
 ## :dart: Objective
 
-You just learned the basics of web developement with Php?
+You just learned the basics of web developement with Php ?
 
 Use this object-oriented PHP project template to understand how to create from scratch a powerful website with with no thirty party dependencies.
 
@@ -18,7 +18,7 @@ At the end:
 
 :pushpin: You will have a clear understand of how web apps work
 
-:pushpin: You will have a clear understand of how frameworks  work and can easily learn any frameworks you want.
+:pushpin: You will have a clear understand of how frameworks  work and can easily learn any frameworkq you want.
 
 :pushpin: You can create your own frameworks if you want with less effort
 

@@ -6,6 +6,8 @@ namespace PhpFromZero\Http;
  * 
  * The HTTP response to send to the browser
  * 
+ * Take this as: "Hey! browser, this is the page you requested for and all meta datas"
+ * 
  * @author Justin Dah-kenangnon <dah.kenangnon@gmail.com>
  * 
  * @link https://github.com/Dahkenangnon
@@ -54,6 +56,8 @@ class Response
      * 
      * Send the response headers
      * 
+     * Because the response contains a header (the meta datas needed to process the response by the browser)
+     * 
      * @return self
      */
     public function sendHeaders()
@@ -78,6 +82,8 @@ class Response
 
     /**
      * Send the page content to the browser
+     * 
+     * This the HTML, CSS & Js code the browser need to show web page to the end user
      * 
      * @return self
      */
