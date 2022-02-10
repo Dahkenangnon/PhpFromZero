@@ -24,6 +24,8 @@ class Config
 
     /**
      * @var String Application environnment
+     * 
+     * Can be production or developpment
      */
     protected $env;
 
