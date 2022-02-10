@@ -66,10 +66,10 @@ For education purpose, this project use the simplest way that junior developer c
 
 ________________________________________
 
-Justin [Dah-kenangnon](https://twitter.com/Dahkenangnon) from [ePatriote.com](ePatriote.com) and [LaSyntax.com](LaSyntax.com) from Benin
+Justin [Dah-kenangnon](https://twitter.com/Dahkenangnon) from [ePatriote.com](https://ePatriote.com) and [LaSyntax.com](https://LaSyntax.com) from Benin
 
 
-He is Software Developer at [ePatriote.com](ePatriote.com)
+He is Software Developer at [ePatriote.com](https://ePatriote.com)
 
 Mathematics and Numerical Simulation Engineer
 
