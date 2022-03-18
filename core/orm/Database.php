@@ -4,6 +4,7 @@ namespace PhpFromZero\Orm;
 
 use PhpFromZero\Config\Config;
 use PhpFromZero\Error\OrmError;
+use PhpFromZero\Logger\Logger;
 
 /**
  * Datase connection 
@@ -49,8 +50,7 @@ class Database
                 return self::$_instance;
             }
         } catch (\Exception $e) {
-
-            print_r($e);
+            Logger::error("Cannot create database connection due to " . $e->getMessage());
             return self::class;
         }
     }
@@ -76,6 +76,7 @@ class Database
         } catch (\Exception $e) {
 
             // Throw error if impossible to connect the mysql with above credentials
+            Logger::fatal("Database connection failed due to invalid credentials");
             throw new OrmError($e->getMessage(), 1);
         }
     }

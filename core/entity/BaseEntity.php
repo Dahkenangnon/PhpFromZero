@@ -1,6 +1,7 @@
 <?php
 
 namespace PhpFromZero\Entity;
+
 use ArrayAccess;
 
 /**
@@ -13,7 +14,6 @@ use ArrayAccess;
  * @link https://github.com/Dahkenangnon
  * @link https://ePatriote.com
  * @link https://LaSyntax.com
- * @link https://Dah-kenangnon.com
  */
 class BaseEntity  implements ArrayAccess
 {
@@ -61,7 +61,7 @@ class BaseEntity  implements ArrayAccess
             // This is necessary because using $prop->getvalue() 
             //will throw no access to protected properties. SO by 
             //doing this, we use the getter of the current object prop
-            $getter = "get" . ucfirst($name); 
+            $getter = "get" . ucfirst($name);
             $value = $this->$getter();
 
             $this->container[$name] = $value;
@@ -106,5 +106,4 @@ class BaseEntity  implements ArrayAccess
     {
         return isset($this->container[$offset]) ? $this->container[$offset] : null;
     }
-
 }

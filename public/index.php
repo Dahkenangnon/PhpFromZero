@@ -26,34 +26,16 @@
 // Include autoload, required to load classes
 require __DIR__ . '/../core/autoloader.php';
 
-
+// We need to used two classes here: Kernel and Request
 use PhpFromZero\Http\Request;
 use PhpFromZero\Kernel;
 use PhpFromZero\Config\Config;
 use PhpFromZero\Http\Response;
-use PhpFromZero\Utils\Logger;
+use PhpFromZero\Logger\Logger;
 use PhpFromZero\Utils\Utils;
 
 
-
-
-// We are setting our costum error handler
-// So, for any error, Php will call this function
-// Like that, we can handle error as we want
-//
-//
-// This is not required for this particular project
-// because we're are in an education purpose.
-// But you might take in mind that in real project, it is required
-
-//
-// This is useful to show to visitors a 404 Error page in production and a debug page (with 
-// more technical details which can be critical) when in dev mode.
-
-// This is just an example to show you how this is useful
-//
 set_exception_handler('exception_handler');
-
 
 
 /**
@@ -63,35 +45,28 @@ function exception_handler($e)
 {
     // Config and logger component
     $config = new Config();
-    $logger = new Logger();
 
     // Determine the HTTP status code 
     $statusCode = (http_response_code() < 100 or  http_response_code() > 511) ? 500 : http_response_code();
 
     // Determine the HTTP status code text
     $statusText = Utils::$statusTexts[$statusCode] ?? "Fatal Error";
-    global $request;
-
 
     // Loggin can be enable or disable
     // See param in env.local.php for more information
-    if ($config->get("enableLog")) {
-        $logger::log(
-            msg: $e,
-            url: $request->getUrl(),
-            status: $statusCode
-        );
-    }
+
+    Logger::info("Error: " . $e->getMessage() . " in " . $e->getFile() . " at line " . $e->getLine());
+
 
     // Error handling should different from `dev` or `prod` env
     if (0 === strcmp($config->getenv(), "dev")) {
         // In dev mode report all thing
         ini_set('error_reporting', E_ALL);
 
-        echo "From line ".__LINE__." of file ".__FILE__." <br>";
-        echo 
+        echo "From line " . __LINE__ . " of file " . __FILE__ . " <br>";
+        echo
         "<h1>PhpFromZero error:</h1> 
-        From line ".__LINE__." of file ".__FILE__." <br>
+        From line " . __LINE__ . " of file " . __FILE__ . " <br>
         <h3>You're seeing this because you are in dev env & you enable log</h3> <pre>";
         print_r($e);
         echo "</pre>";
@@ -118,8 +93,7 @@ function exception_handler($e)
     }
 }
 
-
-// We need the HTPP Request
+// We need the HTPP Request to request
 $request = new Request();
 
 
@@ -128,6 +102,7 @@ $kernel = new Kernel();
 
 // When a Request is sent to this file, the Kernel is delegated to handle it and return a Response object
 $response = $kernel->handle($request);
+
 
 // When everything is done (Routing, Controller>action, Database, form, log, etc),
 // we send response to the browser and terminate the request

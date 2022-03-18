@@ -7,7 +7,7 @@
 
 //Warning: This file may normally be ignored by git (listed in .gitignore file) but to allow you to edit it, it's left here, so in real project don't forget to remove it
 
-// This is loaded production environment
+// This is loaded dev environment
 return [
     "env" => "prod",
     "enableLog" => true,

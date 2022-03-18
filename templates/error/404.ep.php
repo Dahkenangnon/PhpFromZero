@@ -42,7 +42,7 @@
             <div class="p-4 p-lg-5 bg-light rounded-3 text-center">
                 <div class="m-4 m-lg-5">
                     <h1 class="display-5 fw-bold">Ressource non trouvée</h1>
-                    <p class="fs-4"><?= $_["error"] ?></p>
+                    <p class="fs-4"><?= $_["maintenance_msg"] ?></p>
                     <a class="btn btn-primary btn-lg" href="/">Accueil</a>
                 </div>
             </div>

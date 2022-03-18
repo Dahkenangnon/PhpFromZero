@@ -46,9 +46,7 @@
                 <div class="m-4 m-lg-5">
                     <h1 class="display-5 fw-bold">Erreur du serveur</h1>
                     <p class="fs-4">Une erreur fatale s'est produite<br>
-                        <br>Le développeur a sciemment glisé un virus dans le code. <br>
-
-                        Si cela persiste, merci de nous le signaler au:<a href="mailto:dah.kenangnon@gmail.com">dah.kenangnon@gmail.com</a>
+                        Si cela persiste, merci de nous le signaler au: <a href="mailto:dah.kenangnon@gmail.com">dah.kenangnon@gmail.com</a>
                     </p>
 
                     <a class="btn btn-primary btn-lg" href="/">Accueil</a>
