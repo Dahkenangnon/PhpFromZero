@@ -6,7 +6,7 @@ Handcrafted PHP OOP project templates using MVC design with no dependencies.
 
 You just learned the basics of web developement with Php ?
 
-Use this object-oriented PHP project template to understand how to create from scratch a powerful website with with no thirty party dependencies.
+Use this object oriented PHP project template to understand how to create from scratch a powerful website with no third party dependencies.
 
 This code is well documented and easy to understand to all PHP junior developers to understand how to create a PHP project from scratch with very well structured code and maintainable code.
 
@@ -18,9 +18,9 @@ At the end:
 
 :pushpin: You will have a clear understand of how web apps work
 
-:pushpin: You will have a clear understand of how frameworks  work and can easily learn any frameworkq you want.
+:pushpin: You will have a clear understand of how frameworks  work and can easily learn any framework you want.
 
-:pushpin: You can create your own frameworks if you want with less effort
+:pushpin: You can create your own framework if you want with less effort
 
 ## :interrobang: Requirements
 
@@ -40,7 +40,7 @@ At the end:
 
 :computer: If you want to use this in a real project, you may improve it as this can have many security or performance issues
 
-:computer: For any question, contact dah.kenangnon@gmail.com ou join the discussion: <https://github.com/Dahkenangnon/PhpFromZero/discussions>
+:computer: For any question, contact dah.kenangnon@gmail.com or join the discussion: <https://github.com/Dahkenangnon/PhpFromZero/discussions>
 
 ## :question: Try it in your computer
 
@@ -53,9 +53,9 @@ At the end:
 php -S localhost:9000 -t public 
 ```
 
-- Checkout your browser at <http://localhost:9000> and view page
+- Checkout your browser at <http://localhost:9000> and view pages
 
-- NB: You can encounter some error base on your environnment configuration
+- NB: You can encounter some error based on your environnment's configuration
 
 ## :electric_plug: Extending
 
