@@ -8,13 +8,13 @@
     <title>Bad request</title>
 </head>
 
-<body>
-
+<body style=" max-width: 500px;
+  margin: auto;">
     <h1>Bad request</h1>
     Something is wrong in your request
 
 
-    <h2>Provided by PhpFromZero</h2>
+    <h2>If you're this website developpeur, plus customize this page to fit your site design.</h2>
 
 </body>
 

@@ -8,8 +8,8 @@
     <title>Server Error</title>
 </head>
 
-<body>
-
+<body style=" max-width: 500px;
+  margin: auto;">
     <h1>Serveur error</h1>
     The serveur encountered an error<br>
 

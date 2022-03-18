@@ -15,6 +15,7 @@ use PhpFromZero\HtmlForms\FormBuilder;
  * @link https://github.com/Dahkenangnon
  * @link https://ePatriote.com
  * @link https://LaSyntax.com
+ * @link https://Dah-kenangnon.com
  */
 class MessageForm extends FormBuilder
 {
@@ -49,7 +50,7 @@ class MessageForm extends FormBuilder
                 "required" => true,
                 "placeholder"=> "Contenu du message",
                 "class"=> "form-control",
-                "rows"=> "5"
+                "rows"=> "3"
             ]);
     }
 }

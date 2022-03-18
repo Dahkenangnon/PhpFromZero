@@ -16,6 +16,7 @@ use PhpFromZero\Http\Response;
  * @link https://github.com/Dahkenangnon
  * @link https://ePatriote.com
  * @link https://LaSyntax.com
+ * @link https://Dah-kenangnon.com
  */
 class HomeController extends BaseController
 {
@@ -30,7 +31,7 @@ class HomeController extends BaseController
     public function __construct()
     {
         parent::__construct();
-        
+
         $this->userRepo = new UserRepository();
         $this->messageRepo = new MessageRepository();
     }
@@ -48,7 +49,7 @@ class HomeController extends BaseController
         return $this->render('home/index.ep.php', [
             'messages' => $this->messageRepo->findBy(
                 orderBy: [
-                    "id" => "DESC"
+                    "id" => "ASC"
                 ],
                 limit: 10
             )

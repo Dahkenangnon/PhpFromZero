@@ -14,6 +14,7 @@ use PhpFromZero\Http\Bag\File;
  * @link https://github.com/Dahkenangnon
  * @link https://ePatriote.com
  * @link https://LaSyntax.com
+ * @link https://Dah-kenangnon.com
  */
 class Files
 {

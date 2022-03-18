@@ -16,6 +16,7 @@ use PhpFromZero\Error\BadCredentialsError;
  * @link https://github.com/Dahkenangnon
  * @link https://ePatriote.com
  * @link https://LaSyntax.com
+ * @link https://Dah-kenangnon.com
  */
 abstract class SecurityController extends BaseController
 {

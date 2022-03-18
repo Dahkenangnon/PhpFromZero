@@ -8,7 +8,7 @@
 //Warning: This file may normally be ignored by git (listed in .gitignore file) but to allow you to edit it, it's left here, so in real project don't forget to remove it
 
 return [
-    "env" => "dev",
+    "env" => "prod",
     "enableLog" => false,
     "baseurl" => "http://localhost:9000",
     "params" => [

@@ -19,6 +19,7 @@
  * @link https://github.com/Dahkenangnon
  * @link https://ePatriote.com
  * @link https://LaSyntax.com
+ * @link https://Dah-kenangnon.com
  */
 
 
@@ -98,11 +99,11 @@ function exception_handler($e)
         error_reporting(0);
 
         // Deplay error page in production
-        $errorPagePath = $config->getProjectDir() . '/core/templates/error/' . $statusCode . '.ep.php';
+        $errorPagePath = $config->getProjectDir() . '/templates/error/' . $statusCode . '.ep.php';
         if (file_exists($errorPagePath)) {
             $errorPageContent = require_once($errorPagePath);
         } else {
-            $errorPageContent = require_once($config->getProjectDir() . '/core/templates/error/500.ep.php');
+            $errorPageContent = require_once($config->getProjectDir() . '/core/templates/error/' . $statusCode . '.ep.php');
         }
 
         // Disable the Php default verbose error reporting

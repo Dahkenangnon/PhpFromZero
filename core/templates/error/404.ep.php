@@ -8,14 +8,15 @@
     <title>Page not found</title>
 </head>
 
-<body>
+<body style=" max-width: 500px;
+  margin: auto;">
 
     <h1>This page is not found</h1>
     The page you're searching for is not found. <br>
 
-    You go forward to <a href="/"> the home page</a>
+    You can go forward to <a href="/"> the home page</a>
 
-    <h2>Provided by PhpFromZero</h2>
+    <h2>If you're this website developpeur, plus customize this page to fit your site design.</h2>
 
 </body>
 

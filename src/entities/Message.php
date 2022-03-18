@@ -12,6 +12,7 @@ use PhpFromZero\Entity\BaseEntity;
  * @link https://github.com/Dahkenangnon
  * @link https://ePatriote.com
  * @link https://LaSyntax.com
+ * @link https://Dah-kenangnon.com
  */
 class Message extends BaseEntity
 {

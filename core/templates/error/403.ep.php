@@ -8,8 +8,8 @@
     <title>Access restricted</title>
 </head>
 
-<body>
-
+<body style=" max-width: 500px;
+  margin: auto;">
     <h1>Unauthorized</h1>
     You cannot access this page because you're not authenticated or not have the right access role.
 

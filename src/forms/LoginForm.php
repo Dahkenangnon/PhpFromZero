@@ -13,6 +13,7 @@ use PhpFromZero\HtmlForms\FormBuilder;
  * @link https://github.com/Dahkenangnon
  * @link https://ePatriote.com
  * @link https://LaSyntax.com
+ * @link https://Dah-kenangnon.com
  */
 class LoginForm extends FormBuilder
 {
@@ -41,14 +42,14 @@ class LoginForm extends FormBuilder
             ->add("email", TextField::class, [
                 "id" => "email",
                 "required" => true,
-                "placeholder"=> "Bossor ton email ici",
+                "placeholder"=> "Email",
                 "class"=> "form-control"
             ])
             ->add("password", TextField::class, [
                 "id" => "password",
                 "required" => true,
                 "class"=> "form-control",
-                "placeholder"=> "Pass secret toue ici"
+                "placeholder"=> "Mot de passe"
             ]);
     }
 }

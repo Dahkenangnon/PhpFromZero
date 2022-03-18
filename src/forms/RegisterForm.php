@@ -16,6 +16,7 @@ use PhpFromZero\HtmlForms\FormBuilder;
  * @link https://github.com/Dahkenangnon
  * @link https://ePatriote.com
  * @link https://LaSyntax.com
+ * @link https://Dah-kenangnon.com
  */
 class RegisterForm extends FormBuilder
 {
@@ -35,19 +36,19 @@ class RegisterForm extends FormBuilder
     {
         // Override thing here like, submit button label, form name, form id
         
-        //$this->submitButton->setLabel("S'inscrire");
+        $this->submitButton->setLabel("S'inscrire");
 
         $this
             ->add("email", TextField::class, [
                 "id" => "email",
                 
-                "placeholder"=> "Bossor, ton email ici",
+                "placeholder"=> "Email",
                 "class"=> "form-control"
             ])
             ->add("name", TextField::class, [
                 "id" => "name",
                 
-                "placeholder"=> "Asso, ton nom ici",
+                "placeholder"=> "Nom et Prénoms",
                 "class"=> "form-control"
             ])
             ->add("photo", FileField::class, [
@@ -57,19 +58,19 @@ class RegisterForm extends FormBuilder
             ->add("age", NumberField::class, [
                 "id" => "age",
                 
-                "placeholder"=> "Ton age",
+                "placeholder"=> "Age",
                 "class"=> "form-control"
             ])
             ->add("password", TextField::class, [
                 "id" => "password",
                 
-                "placeholder"=> "Mot de passe or",
+                "placeholder"=> "Mot de passe",
                 "class"=> "form-control"
             ])
             ->add("password_confirmation", TextField::class, [
                 "id" => "password_confirmation",
                 
-                "placeholder"=> "Confirme le mot de passe",
+                "placeholder"=> "Confirmez le mot de passe",
                 "class"=> "form-control"
             ]);
     }
