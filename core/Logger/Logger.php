@@ -1,9 +1,7 @@
 <?php
 
 namespace PhpFromZero\Logger;
-
 use PhpFromZero\Config\Config;
-
 
 /**
  * Single-file logwriter with the features of:
