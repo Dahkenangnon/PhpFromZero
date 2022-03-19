@@ -6,7 +6,7 @@ use App\Entities\User;
 use App\Forms\LoginForm;
 use PhpFromZero\Http\Request;
 use PhpFromZero\Http\Response;
-use PhpFromZero\Security\SecurityController;
+use PhpFromZero\guard\SecurityController;
 use App\Forms\RegisterForm;
 use App\Repositories\UserRepository;
 use PhpFromZero\Utils\Utils;

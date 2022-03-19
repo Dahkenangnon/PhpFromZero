@@ -1,6 +1,6 @@
 <?php
 
-namespace PhpFromZero\Security;
+namespace PhpFromZero\guard;
 
 use PhpFromZero\Controller\BaseController;
 use PhpFromZero\Error\BadCredentialsError;

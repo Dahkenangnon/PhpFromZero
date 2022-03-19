@@ -67,8 +67,8 @@ class Logger
         static::$log_file =  static::$config->getProjectDir() . "/var/log/log-" . static::$config->getEnv() . ".{$time}.txt";
 
         //Check if directory /logs exists
-        if (!file_exists(static::$config->getProjectDir() . '/logs')) {
-            mkdir(static::$config->getProjectDir() . '/logs', 0777, true);
+        if (!file_exists(static::$config->getProjectDir() . '/var/log')) {
+            mkdir(static::$config->getProjectDir() . '/var/log', 0777, true);
         }
 
         //Create log file if it doesn't exist.

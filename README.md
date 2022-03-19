@@ -1,6 +1,6 @@
 # PhpFromZero
 <p align="center">
- <img width="460" alt="PhpFromZero Screenshot" height="300" src="./public/img/screen1.png">
+ <img width="460" alt="PhpFromZero Screenshot" height="300" src="./public/img/PhpFromZero1.PNG">
  <br>
 Handcrafted PHP OOP project templates using MVC design with no dependencies.
  <br><br><br>
