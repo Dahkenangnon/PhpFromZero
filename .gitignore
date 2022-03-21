@@ -2,3 +2,4 @@
 
 /var/log/*
 /var/cache/*
+env.local.php

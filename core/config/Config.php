@@ -63,11 +63,11 @@ class Config
         $dir = $r->getFileName();
 
         // Getting config var from the environnement file
-        if (is_file(dirname($dir, 3) . "/env.php")) {
-            $this->container =  include(dirname($dir, 3) . "/env.php");
-        } else if (is_file(dirname($dir, 3) . "/env.local.php")) {
+        if (is_file(dirname($dir, 3) . "/env.local.php")) {
             $this->container =  include(dirname($dir, 3) . "/env.local.php");
-        } else {
+        } else if (is_file(dirname($dir, 3) . "/env.php")) {
+            $this->container =  include(dirname($dir, 3) . "/env.php");
+        } else  {
             throw new ConfigurationError("Environnement file env.local.php or env.php not found in the project root dir", 1);
         }
 
