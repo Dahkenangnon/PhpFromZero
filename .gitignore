@@ -1,5 +1,4 @@
 # List here file or folder you want git to ignore
-
+env.local.php
 /var/log/*
 /var/cache/*
-./env.local.php
