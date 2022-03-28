@@ -1,1 +1,14 @@
-# Place here directives to apaches web server
+# Https using. Uncomment these 3 and replace phpfromzerov1.000webhostapp.com by your app domain name
+
+#RewriteEngine On
+#RewriteCond %{SERVER_PORT} 80
+#RewriteRule ^(.*)$ https://phpfromzerov1.000webhostapp.com/$1 [R,L]
+
+
+
+# Ensuring that all request are handle first by index.php. Uncomment these 4 lines 
+
+#RewriteEngine on
+#RewriteCond %{REQUEST_FILENAME} !-d
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteRule . index.php [L]

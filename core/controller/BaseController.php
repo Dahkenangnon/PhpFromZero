@@ -136,7 +136,7 @@ class BaseController
         ob_end_clean();
 
 
-        return new Response($output, $status, $statusText, ["Content-Type" => "text/html"]);
+        return new Response($output, $status, $statusText, ["Content-Type" => "text/html; charset=UTF-8"]);
     }
 
 
