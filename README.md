@@ -41,7 +41,7 @@ At the end:
 
 :computer: You need Php 8 or uper to run this project.
 
-:computer: This code is used to train new dev at (may be, you want to join us): <https://LaSyntax.com/>
+:computer: This code is used to train new dev at (may be, you want to join us): <https://paonit.com/>
 
 :computer: Use this template on your own risk
 
@@ -73,10 +73,8 @@ For education purpose, this project use the simplest way that junior developer c
 
 ________________________________________
 
-Justin [Dah-kenangnon](https://twitter.com/Dahkenangnon) from [ePatriote.com](https://ePatriote.com) and [LaSyntax.com](https://LaSyntax.com) from Benin
 
-
-He is Software Developer at [ePatriote.com](https://ePatriote.com)
+He is Software Developer at [Paonit.com](https://Paonit.com)
 
 Mathematics and Numerical Simulation Engineer
 
