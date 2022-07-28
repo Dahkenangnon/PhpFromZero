@@ -1,15 +1,21 @@
-# PhpFromZero
+<center><h1>PhpFromZero <h1>
+
+[![GitHub issues](https://img.shields.io/github/issues/Dahkenangnon/PhpFromZero)](https://github.com/Dahkenangnon/PhpFromZero/issues)
+[![GitHub forks](https://img.shields.io/github/forks/Dahkenangnon/PhpFromZero)](https://github.com/Dahkenangnon/PhpFromZero/network)
+[![GitHub stars](https://img.shields.io/github/stars/Dahkenangnon/PhpFromZero)](https://github.com/Dahkenangnon/PhpFromZero/stargazers)
+[![GitHub license](https://img.shields.io/github/license/Dahkenangnon/PhpFromZero)](https://github.com/Dahkenangnon/PhpFromZero/blob/master/LICENSE)
+
+</center>
+
 <p align="center">
- <img width="460" alt="PhpFromZero Screenshot" height="300" src="./public/img/PhpFromZero1.png">
- <br>
 Handcrafted PHP OOP project templates using MVC design with no dependencies.
  <br><br><br>
  
 </p>
 
-See it in action at: https://phpfromzerov1.000webhostapp.com/
-
 ## :dart: Objective
+
+
 
 You just learned the basics of web developement with Php ?
 
@@ -70,13 +76,16 @@ This project aim to allow junior dev to understand really how web apps work  and
 
 For education purpose, this project use the simplest way that junior developer can understand, it's the reason why you shouldn't use as it in real world.
 
-
+<center>    
 ________________________________________
 
 
-He is Software Developer at [Paonit.com](https://Paonit.com)
+The author is Software Developer at [Paonit.com](https://Paonit.com)
+
+IDentity oriented(OpenID Connect and OAuth 2.0)
 
 Mathematics and Numerical Simulation Engineer
 
 
 Happy hacking :rocket:
+</center>
