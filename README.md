@@ -52,7 +52,7 @@ To run PhpFromZero, make sure you have the following:
 ## Attention
 
 - PhpFromZero requires PHP 8 or newer to run.
-- This project is used for educational purposes, such as training new developers at [Paonit.com](https://paonit.com/).
+- This project is used for educational purposes, such as training my mentees.
 - Use this template at your own risk.
 - If you want to use this template in a real project, it is highly recommended to improve security and performance aspects.
 - For any questions or discussions, feel free to contact dah.kenangnon@gmail.com or join the discussion on the [GitHub repository](https://github.com/Dahkenangnon/PhpFromZero/discussions).
