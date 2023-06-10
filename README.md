@@ -83,11 +83,4 @@ PhpFromZero is designed to help junior developers understand the inner workings 
 
 ---
 
-## Author
-
-- Justin Dah-kenangnon
-- Email: dah.kenangnon@gmail.com
-
----
-
 Thank you for choosing PhpFromZero! Give it a star on [GitHub](https://github.com/Dahkenangnon/PhpFromZero) if you find it helpful. We encourage you to give it a try, explore the features, and contribute to its improvement. Happy coding!
