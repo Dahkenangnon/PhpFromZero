@@ -1,91 +1,93 @@
-<center><h1>PhpFromZero <h1>
+# PhpFromZero
 
-[![GitHub issues](https://img.shields.io/github/issues/Dahkenangnon/PhpFromZero)](https://github.com/Dahkenangnon/PhpFromZero/issues)
-[![GitHub forks](https://img.shields.io/github/forks/Dahkenangnon/PhpFromZero)](https://github.com/Dahkenangnon/PhpFromZero/network)
-[![GitHub stars](https://img.shields.io/github/stars/Dahkenangnon/PhpFromZero)](https://github.com/Dahkenangnon/PhpFromZero/stargazers)
-[![GitHub license](https://img.shields.io/github/license/Dahkenangnon/PhpFromZero)](https://github.com/Dahkenangnon/PhpFromZero/blob/master/LICENSE)
-
-</center>
+![Banner Image](doc/assets/phpfromzero_banner.png)
 
 <p align="center">
-Handcrafted PHP OOP project templates using MVC design with no dependencies.
- <br><br><br>
- 
+  <b>A comprehensive project template for beginners to learn PHP web development from scratch.</b>
 </p>
 
-## :dart: Objective
+<p align="center">
+  <a href="https://github.com/Dahkenangnon/PhpFromZero" style="text-decoration: none;">
+    <img src="https://img.shields.io/github/stars/Dahkenangnon/PhpFromZero?style=social" alt="GitHub stars">
+  </a>
+  <a href="https://github.com/Dahkenangnon/PhpFromZero/blob/master/LICENSE" style="text-decoration: none;">
+    <img src="https://img.shields.io/github/license/Dahkenangnon/PhpFromZero" alt="License">
+  </a>
+</p>
 
+---
 
+## Objective
 
-You just learned the basics of web developement with Php ?
+PhpFromZero is a handcrafted project template aimed at helping beginners in PHP web development. It provides a solid foundation for learning how to create powerful websites from scratch using an object-oriented approach and the Model-View-Controller (MVC) design pattern, without relying on external dependencies.
 
-Use this object oriented PHP project template to understand how to create from scratch a powerful website with no third party dependencies.
+This project template is well-documented and designed to be easily understandable for junior PHP developers. By using PhpFromZero, you will:
 
-This code is well documented and easy to understand to all PHP junior developers to understand how to create a PHP project from scratch with very well structured code and maintainable code.
+- Gain hands-on experience in creating PHP websites with an object-oriented approach.
+- Develop a clear understanding of how web applications work.
+- Acquire the skills needed to learn and work with various PHP frameworks.
+- Possess the knowledge to build your own PHP framework with ease.
 
+---
 
+## Features
 
-At the end:
+- **Object-Oriented PHP**: Learn how to structure your code using object-oriented programming (OOP) principles for improved maintainability and code organization.
+- **MVC Design Pattern**: Understand and implement the Model-View-Controller (MVC) design pattern to separate concerns and achieve better code structure.
+- **Documentation**: Detailed documentation guides you through the project structure, code explanations, and usage instructions.
+- **Educational Purpose**: PhpFromZero is designed to facilitate learning and provide a solid foundation for beginners in PHP web development.
 
-:pushpin:  You can create from scratch a php website with OOP approach
+---
 
-:pushpin: You will have a clear understand of how web apps work
+## Requirements
 
-:pushpin: You will have a clear understand of how frameworks  work and can easily learn any framework you want.
+To run PhpFromZero, make sure you have the following:
 
-:pushpin: You can create your own framework if you want with less effort
+- Wamp or Xampp installed and configured.
+- MySQL database.
+- PHP 8 or newer.
 
-## :interrobang: Requirements
+---
 
-:red_circle: Wamp or Xampp
+## Attention
 
-:red_circle: Mysql
+- PhpFromZero requires PHP 8 or newer to run.
+- This project is used for educational purposes, such as training new developers at [Paonit.com](https://paonit.com/).
+- Use this template at your own risk.
+- If you want to use this template in a real project, it is highly recommended to improve security and performance aspects.
+- For any questions or discussions, feel free to contact dah.kenangnon@gmail.com or join the discussion on the [GitHub repository](https://github.com/Dahkenangnon/PhpFromZero/discussions).
 
-:red_circle: Php 8
+---
 
-## :warning: Attention
+## Try it on Your Computer
 
-:computer: You need Php 8 or uper to run this project.
+To run PhpFromZero on your computer, follow these steps:
 
-:computer: This code is used to train new dev at (may be, you want to join us): <https://paonit.com/>
-
-:computer: Use this template on your own risk
-
-:computer: If you want to use this in a real project, you may improve it as this can have many security or performance issues
-
-:computer: For any question, contact dah.kenangnon@gmail.com or join the discussion: <https://github.com/Dahkenangnon/PhpFromZero/discussions>
-
-## :question: Try it in your computer
-
-- Clone the repo
-- Create a new database as mentioned in env.local.php
-- Import php_from_zero.sql into a newest database
-- Run in the project dir:
-
+1. Clone the repository: `git clone https://github.com/Dahkenangnon/PhpFromZero.git`
+2. Create a new database as mentioned in `env.local.php`.
+3. Import the `php_from_zero.sql` file into the newly created database.
+4. Run the following command in the project directory:
 ```bash
-php -S localhost:9000 -t public 
+php -S localhost:9000 -t public
 ```
+5. Open your browser and navigate to [http://localhost:9000](http://localhost:9000) to view the pages.
+   - Please note that depending on your environment's configuration, you may encounter some errors.
 
-- Checkout your browser at <http://localhost:9000> and view pages
+---
 
-- NB: You can encounter some error based on your environnment's configuration
+## Extending
 
-## :electric_plug: Extending
+PhpFromZero is designed to help junior developers understand the inner workings of web applications and create their own PHP projects
 
-This project aim to allow junior dev to understand really how web apps work  and be able to create their own Php project with well structured and maintenable architecture.
+ with well-structured and maintainable architecture. It provides a simplified approach for educational purposes and may not be suitable for production environments.
 
-For education purpose, this project use the simplest way that junior developer can understand, it's the reason why you shouldn't use as it in real world.
+---
 
-<center>    
-________________________________________
+## Author
 
+- Justin Dah-kenangnon
+- Email: dah.kenangnon@gmail.com
 
-The author is Software Developer at [Paonit.com](https://Paonit.com)
+---
 
-IDentity oriented(OpenID Connect and OAuth 2.0)
-
-Mathematics and Numerical Simulation Engineer
-
-
-Happy hacking :rocket:
-</center>
+Thank you for choosing PhpFromZero! Give it a star on [GitHub](https://github.com/Dahkenangnon/PhpFromZero) if you find it helpful. We encourage you to give it a try, explore the features, and contribute to its improvement. Happy coding!
