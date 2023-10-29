@@ -1,5 +1,7 @@
 # PhpFromZero
 
+## ⚠️ Archived because I'm building new one with more comprehensive doc
+
 ![Banner Image](doc/assets/phpfromzero_banner.png)
 
 <p align="center">
